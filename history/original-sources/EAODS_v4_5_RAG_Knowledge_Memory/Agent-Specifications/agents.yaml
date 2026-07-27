@@ -1,0 +1,55 @@
+suite: EAODS
+version: 3.2.0-alpha
+agents:
+  - id: orchestrator
+    name: Enterprise Orchestrator Agent
+    role: Workflow orchestration and governance control plane
+    primary_volume: Volume-02-System-Architecture
+    approval_gates:
+      - high_impact_action
+      - sensitive_publication
+      - production_change
+  - id: knowledge_base
+    name: Enterprise Knowledge Base Agent
+    role: Evidence retrieval and institutional memory
+    primary_volume: Volume-08-Knowledge-Management
+  - id: knowledge_curator
+    name: Enterprise Knowledge Curator Agent
+    role: Source quality, classification, and knowledge lifecycle
+    primary_volume: Volume-08-Knowledge-Management
+  - id: executive_assistant
+    name: Enterprise Executive Assistant Agent
+    role: Executive operations, follow-up, scheduling, and communication support
+    primary_volume: Volume-07-Executive-Operations
+  - id: legal_compliance
+    name: Enterprise Compliance Governance and Risk Intelligence Specialist
+    role: Compliance, governance, privacy, audit, and risk advisory
+    primary_volume: Volume-06-Compliance-Agents
+    approval_gates:
+      - legal_interpretation
+      - compliance_conclusion
+      - regulated_decision
+  - id: threat_intelligence
+    name: Enterprise Threat Intelligence Agent
+    role: Threat intelligence lifecycle, IOC enrichment, and executive threat briefing
+    primary_volume: Volume-05-Security-Agents
+  - id: detection_matcher
+    name: Enterprise Detection Matcher Agent
+    role: Detection engineering, correlation, and MITRE ATT&CK mapping
+    primary_volume: Volume-05-Security-Agents
+  - id: incident_report
+    name: Enterprise Incident Response and Reporting Agent
+    role: Incident documentation, timeline, executive reporting, and lessons learned
+    primary_volume: Volume-05-Security-Agents
+    approval_gates:
+      - incident_disclosure
+      - legal_notification
+      - production_containment
+  - id: business_proposal
+    name: Enterprise Business Proposal Agent
+    role: Scope, proposal, pricing logic, assumptions, and client deliverables
+    primary_volume: Volume-04-Business-Agents
+  - id: portfolio_documentation
+    name: Enterprise Portfolio Documentation Agent
+    role: Portfolio case studies, GitHub documentation, and professional evidence
+    primary_volume: Volume-03-Core-Agents

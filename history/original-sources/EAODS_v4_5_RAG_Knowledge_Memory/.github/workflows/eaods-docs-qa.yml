@@ -1,0 +1,58 @@
+name: EAODS Documentation QA
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "mkdocs.yml"
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  docs-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check required documentation files
+        run: |
+          test -f README.md
+          test -f AGENTS.md
+          test -f EAODS_v3_2_Enhanced_Manifest.md
+
+      - name: Basic Markdown structure check
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          failed = []
+          for p in Path('.').rglob('*.md'):
+              text = p.read_text(errors='ignore')
+              if not text.strip():
+                  failed.append((str(p), 'empty'))
+              if text.startswith('---') and '---' not in text[3:]:
+                  failed.append((str(p), 'bad yaml front matter'))
+          if failed:
+              print(failed)
+              raise SystemExit(1)
+          print('Markdown structure checks passed.')
+          PY
+
+      - name: Simple secret pattern scan
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          risky = ['api_key=', 'password=', 'secret=', 'token=']
+          hits = []
+          for p in Path('.').rglob('*.md'):
+              text = p.read_text(errors='ignore').lower()
+              for r in risky:
+                  if r in text:
+                      hits.append((str(p), r))
+          if hits:
+              print('Potential secret patterns:', hits)
+              raise SystemExit(1)
+          print('No simple secret patterns found.')
+          PY

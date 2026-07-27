@@ -1,0 +1,18 @@
+workflow_id: EAODS-WF-0001
+title:
+owner:
+classification:
+status: intake
+goal:
+audience:
+sensitivity:
+required_agents: []
+inputs: []
+outputs: []
+assumptions: []
+risks: []
+approval_gates: []
+qa_checks: []
+deliverables: []
+archive_location:
+next_improvement:

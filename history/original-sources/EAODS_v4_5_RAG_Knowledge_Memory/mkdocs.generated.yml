@@ -1,0 +1,54 @@
+site_name: Enterprise AI Operator Documentation Suite
+site_description: EAODS generated documentation site
+theme:
+  name: material
+markdown_extensions:
+  - tables
+  - fenced_code
+  - admonition
+  - toc:
+      permalink: true
+nav:
+  - Home: README.md
+  - .github:
+      - "docs: expand [agent] handbook": ".github/ISSUE_TEMPLATE/agent-handbook-expansion.md"
+      - "EAODS Pull Request": ".github/pull_request_template.md"
+  - Architecture:
+      - "EAODS v4.1 Target Architecture": "Architecture/eaods_v4_1_target_architecture.md"
+  - Artifact-Factory:
+      - "EAODS Artifact Factory Design": "Artifact-Factory/artifact_factory_design.md"
+  - Case-Studies:
+      - "Advanced EAODS Case Study Template": "Case-Studies/Advanced_Case_Study_Template.md"
+  - Evaluation:
+      - "EAODS Agent Evaluation Rubric": "Evaluation/Agent_Evaluation_Rubric.md"
+      - "EAODS Documentation QA Pipeline": "Evaluation/Documentation_QA_Pipeline.md"
+      - "EAODS AgentOps Metrics Dashboard Specification": "Evaluation/agentops_metrics_dashboard_spec.md"
+  - Governance:
+      - "How EAODS v3.2 Beats Ordinary Agentic Coding Tools": "Governance/Competitive_Strategy_Blueprint.md"
+      - "EAODS v4 Runtime Implementation Roadmap": "Governance/EAODS_v4_Runtime_Implementation_Roadmap.md"
+  - Innovation-Lab:
+      - "EAODS Innovative Capabilities Backlog": "Innovation-Lab/innovative_capabilities_backlog.md"
+  - Publishing:
+      - "EAODS GitHub and Publishing Automation Design": "Publishing/github_publishing_automation_design.md"
+  - Release-Notes:
+      - "EAODS v3.2.0-alpha Release Notes": "Release-Notes/v3.2.0-alpha.md"
+      - "EAODS v4.0.0-alpha Runtime Scaffold Release Notes": "Release-Notes/v4.0.0-alpha-runtime-scaffold.md"
+      - "EAODS v4.1.0-alpha Research and Innovation Release Notes": "Release-Notes/v4.1.0-alpha-research-innovation.md"
+      - "EAODS v4.2.0-alpha Runtime Governance Release Notes": "Release-Notes/v4.2.0-alpha-runtime-governance.md"
+      - "EAODS v4.3.0-alpha Artifact Factory Release Notes": "Release-Notes/v4.3.0-alpha-artifact-factory.md"
+      - "EAODS v4.4.0-alpha GitHub and Publishing Automation Release Notes": "Release-Notes/v4.4.0-alpha-github-publishing-automation.md"
+  - Research:
+      - "Agentic AI Market and Architecture Research — 2026": "Research/agentic_ai_market_and_architecture_research_2026.md"
+  - Roadmaps:
+      - "EAODS Roadmap — v4.1 to v5 Operator OS": "Roadmaps/v4_1_to_v5_operator_os_roadmap.md"
+  - Runtime-Design:
+      - "EAODS Evidence Ledger Specification": "Runtime-Design/evidence_ledger_specification.md"
+      - "EAODS Policy Engine Specification": "Runtime-Design/policy_engine_specification.md"
+  - Security:
+      - "EAODS Agent Security and Safety Guardrails": "Security/Agent_Security_Guardrails.md"
+      - "EAODS Prompt Injection Firewall Design": "Security/prompt_injection_firewall_design.md"
+  - Templates:
+      - "EAODS Control Matrix Template": "Templates/Control_Matrix_Template.md"
+      - "EAODS Risk Register Template": "Templates/Risk_Register_Template.md"
+  - Volume-02-System-Architecture:
+      - "Enterprise Orchestrator Agent Handbook — v3.2 Expansion": "Volume-02-System-Architecture/orchestrator_agent_handbook_v3_2_expansion.md"

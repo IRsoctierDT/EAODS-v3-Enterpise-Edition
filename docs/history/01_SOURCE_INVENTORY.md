@@ -23,7 +23,7 @@ owner: Ivan Rozenblad
 | SRC-010 | Ten Python agent sources | Recovered originals, registered 2026-07-26 | A | Bodies recovered; SHA-256 registered | Recovered (see EAODS-HIST-ENT-001) |
 | SRC-011 | Ten Markdown agent conversions | Recovered originals, registered 2026-07-26 | A | Bodies recovered; SHA-256 registered | Recovered (see EAODS-HIST-ENT-001) |
 | SRC-012 | EAODS v3 Enterprise Edition | Recovered archive, registered 2026-07-26 | A | 29 of 29 units recovered; SHA-256 registered | Recovered (see EAODS-HIST-ENT-001) |
-| SRC-013 | EAODS v3.2.0-alpha | Conversation report | B/C | Named package artifacts reported | Exception |
+| SRC-013 | EAODS v3.2.0-alpha | Recovered packages and release notes, registered 2026-07-26 | A | v3.2 package and release notes recovered; no Git tag ever existed | Recovered (see EAODS-HIST-PKG-001) |
 | SRC-014 | Volume 10 planning brief | Direct July 6 transcript | B | Substantive planning scope recovered | Provenance |
 | SRC-015 | Proposed Volumes 11–13 | Direct July 6 transcript | B | Historical plan recovered | Superseded taxonomy |
 | SRC-016 | ADR-0002 | PR #10/project record | B | Purpose verified; path unresolved here | Resolve path |
@@ -35,6 +35,8 @@ owner: Ivan Rozenblad
 | SRC-022 | Reconstruction register v0.2.0 | Complete retained Markdown | A | Complete reconstructed control artifact | Incorporated |
 | SRC-023 | `Pasted text.txt` | Complete retained transcript excerpt | A/B | Complete retained evidence file | Incorporated |
 | SRC-024 | PR #19 roadmap reconciliation | Verified project record | A/B | Merged; canonical roadmap established | Current governance |
+| SRC-025 | EAODS v4.0–v4.5 runtime packages | Recovered archives, registered 2026-07-26 | A | Seven packages recovered; 110 Python sources; SHA-256 registered | Recovered (see EAODS-HIST-PKG-001) |
+| SRC-026 | v4.6 ECT conversation excerpt | Pasted transcript received 2026-07-26 | B | Substantive body retained; formatting flattened; original file absent | Evidence for EXC-009 reconstruction |
 
 ## Evidence grades
 
