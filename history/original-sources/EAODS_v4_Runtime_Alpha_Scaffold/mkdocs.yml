@@ -1,0 +1,23 @@
+site_name: Enterprise AI Operator Documentation Suite
+site_description: EAODS v3.2 Enhanced Operator Edition
+site_author: Ivan Rozenblad
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - pymdownx.superfences
+nav:
+  - Home: README.md
+  - Enhanced Manifest: EAODS_v3_2_Enhanced_Manifest.md
+  - Competitive Strategy: Governance/Competitive_Strategy_Blueprint.md
+  - Security Guardrails: Security/Agent_Security_Guardrails.md
+  - Evaluation Rubric: Evaluation/Agent_Evaluation_Rubric.md
+  - QA Pipeline: Evaluation/Documentation_QA_Pipeline.md

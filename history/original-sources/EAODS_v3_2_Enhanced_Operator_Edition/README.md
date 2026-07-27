@@ -1,0 +1,33 @@
+---
+title: "EAODS v3.2 Enhanced Operator Edition"
+version: "3.2.0"
+owner: "Ivan Rozenblad"
+generated: "2026-07-07T19:27:31.017264+00:00"
+classification: "Internal / Portfolio / Commercialization Candidate"
+---
+
+# Enterprise AI Operator Documentation Suite v3.2
+
+EAODS v3.2 upgrades the prior V3 package from documentation into a governed enterprise AI operating system.
+
+## Core Additions
+
+- Enhanced manifest
+- Competitive strategy blueprint
+- AGENTS.md repository operating instructions
+- Agent security guardrails
+- Documentation QA pipeline
+- Agent evaluation rubric
+- Orchestrator v3.2 expansion
+- GitHub Actions documentation QA workflow
+- MkDocs configuration
+- Scorecard schema
+- workflow, risk, control, and case-study templates
+
+## Strategic Purpose
+
+The purpose is to outperform ordinary agentic coding workflows by adding governance, evidence discipline, reusable doctrine, safety gates, publishing readiness, and measurable quality.
+
+## Next Step
+
+Use this package as the new foundation for EAODS v3.2, then merge the earlier V3 handbooks into this enhanced structure.

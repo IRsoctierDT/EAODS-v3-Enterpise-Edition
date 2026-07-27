@@ -1,0 +1,66 @@
+{
+  "suite": "EAODS",
+  "version": "4.0.0-alpha",
+  "minimum_publication_score": 85,
+  "criteria": [
+    {
+      "name": "yaml_completeness",
+      "weight": 5
+    },
+    {
+      "name": "mission_clarity",
+      "weight": 5
+    },
+    {
+      "name": "scope_boundaries",
+      "weight": 5
+    },
+    {
+      "name": "workflow_specificity",
+      "weight": 10
+    },
+    {
+      "name": "governance_controls",
+      "weight": 10
+    },
+    {
+      "name": "risk_analysis",
+      "weight": 10
+    },
+    {
+      "name": "human_approval_gates",
+      "weight": 10
+    },
+    {
+      "name": "evidence_discipline",
+      "weight": 10
+    },
+    {
+      "name": "qa_checklist",
+      "weight": 10
+    },
+    {
+      "name": "case_study_depth",
+      "weight": 10
+    },
+    {
+      "name": "agent_integration",
+      "weight": 5
+    },
+    {
+      "name": "reusability",
+      "weight": 5
+    },
+    {
+      "name": "publishing_readiness",
+      "weight": 5
+    }
+  ],
+  "mandatory_failure_conditions": [
+    "unsupported legal or regulatory claim",
+    "missing human approval gate for high impact action",
+    "secret exposure",
+    "no scope statement",
+    "missing QA process"
+  ]
+}

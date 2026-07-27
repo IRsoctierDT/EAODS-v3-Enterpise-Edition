@@ -1,0 +1,15 @@
+[project]
+name = "eaods-runtime"
+version = "4.4.0-alpha"
+description = "GitHub and publishing automation for the Enterprise AI Operator Documentation Suite."
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0.0",
+]
+
+[project.scripts]
+eaods = "eaods.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

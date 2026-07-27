@@ -1,0 +1,112 @@
+suite: EAODS
+version: 4.0.0-alpha
+agents:
+  - id: orchestrator
+    name: Enterprise Orchestrator Agent
+    role: Workflow orchestration and governance control plane
+    risk_tier_default: 1
+    approval_gates:
+      - high_impact_action
+      - sensitive_publication
+      - production_change
+    outputs:
+      - workflow_plan
+      - routing_matrix
+      - qa_decision
+
+  - id: knowledge_base
+    name: Enterprise Knowledge Base Agent
+    role: Evidence retrieval and institutional memory
+    risk_tier_default: 1
+    outputs:
+      - evidence_inventory
+      - retrieval_summary
+      - source_map
+
+  - id: knowledge_curator
+    name: Enterprise Knowledge Curator Agent
+    role: Source quality, classification, and knowledge lifecycle
+    risk_tier_default: 1
+    outputs:
+      - source_quality_report
+      - canonical_document_list
+      - archive_recommendation
+
+  - id: executive_assistant
+    name: Enterprise Executive Assistant Agent
+    role: Executive operations, follow-up, scheduling, and communication support
+    risk_tier_default: 2
+    approval_gates:
+      - external_communication
+      - calendar_commitment
+    outputs:
+      - executive_summary
+      - action_register
+      - follow_up_plan
+
+  - id: legal_compliance
+    name: Enterprise Compliance Governance and Risk Intelligence Specialist
+    role: Compliance, governance, privacy, audit, and risk advisory
+    risk_tier_default: 5
+    approval_gates:
+      - legal_interpretation
+      - compliance_conclusion
+      - regulated_decision
+    outputs:
+      - gap_assessment
+      - risk_register
+      - control_matrix
+
+  - id: threat_intelligence
+    name: Enterprise Threat Intelligence Agent
+    role: Threat intelligence lifecycle, IOC enrichment, and executive threat briefing
+    risk_tier_default: 2
+    outputs:
+      - threat_brief
+      - ioc_summary
+      - intelligence_confidence_assessment
+
+  - id: detection_matcher
+    name: Enterprise Detection Matcher Agent
+    role: Detection engineering, correlation, and MITRE ATT&CK mapping
+    risk_tier_default: 3
+    approval_gates:
+      - production_detection_change
+    outputs:
+      - detection_map
+      - coverage_gap_report
+      - tuning_recommendation
+
+  - id: incident_report
+    name: Enterprise Incident Response and Reporting Agent
+    role: Incident documentation, timeline, executive reporting, and lessons learned
+    risk_tier_default: 4
+    approval_gates:
+      - incident_disclosure
+      - legal_notification
+      - production_containment
+    outputs:
+      - incident_report
+      - timeline
+      - lessons_learned
+
+  - id: business_proposal
+    name: Enterprise Business Proposal Agent
+    role: Scope, proposal, pricing logic, assumptions, and client deliverables
+    risk_tier_default: 3
+    approval_gates:
+      - client_commitment
+      - pricing_commitment
+    outputs:
+      - proposal
+      - statement_of_work
+      - assumptions_register
+
+  - id: portfolio_documentation
+    name: Enterprise Portfolio Documentation Agent
+    role: Portfolio case studies, GitHub documentation, and professional evidence
+    risk_tier_default: 1
+    outputs:
+      - portfolio_case_study
+      - readme
+      - project_summary

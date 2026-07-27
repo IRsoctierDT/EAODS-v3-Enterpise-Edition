@@ -1,0 +1,10 @@
+id: ACT-0001
+requested_by: Ivan Rozenblad
+agent_id: orchestrator
+action_type: publish_documentation
+target: public_repository
+sensitivity: internal
+risk_tier: 2
+approval_status: false
+requires_evidence: true
+evidence: []

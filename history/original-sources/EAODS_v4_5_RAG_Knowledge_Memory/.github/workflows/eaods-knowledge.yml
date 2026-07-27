@@ -1,0 +1,35 @@
+name: EAODS Knowledge Memory QA
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "runtime/eaods/knowledge.py"
+      - "runtime/tests/test_knowledge.py"
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  knowledge-qa:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: runtime
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Test knowledge memory
+        run: pytest tests/test_knowledge.py
