@@ -79,3 +79,5 @@ nav:
       - Security: governance/SECURITY.md
       - Contributing: governance/CONTRIBUTING.md
       - Roadmap: governance/ROADMAP.md
+  - Architecture:
+      - Enterprise Operating Model: architecture/ENTERPRISE_OPERATING_MODEL.md
