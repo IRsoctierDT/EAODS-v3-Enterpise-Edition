@@ -19,5 +19,6 @@
 - Unified Historical Corpus (1.0.0-reconstructed) under docs/history/ — migration-control baseline with source inventory, provenance ledger, exception queue, and Volume 10 north-star charter.
 - Documentation quality workflow.
 - Agent operating manual (AGENTS.md, vendor-neutral) with CLAUDE.md importing it — repository policy for autonomous AI increments, quality gates, and human approval boundaries.
+- Complete v4.6 Executive Control Tower transmission and the "EAODS V3 Continuation" shared-conversation provenance record registered as corpus evidence (SRC-026 upgraded, SRC-027 added).
 - Recovered EAODS v3.2 Enhanced Operator Edition and v4.0-4.5 runtime packages registered under history/ with SHA-256 manifest (EAODS-HIST-PKG-001); EXC-007 closed (v3.2.0-alpha recovered; no Git tag ever existed), EXC-009 advanced with registered conversation evidence.
 - Recovered 29-file EAODS v3 Enterprise Edition source corpus registered under history/ with SHA-256 integrity manifest (EAODS-HIST-ENT-001); exceptions EXC-005 and EXC-006 closed, EXC-008 advanced to pending-review; committed source-archive package evidence referenced by the reconciliation record.
