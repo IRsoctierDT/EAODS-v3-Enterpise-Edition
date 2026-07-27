@@ -7,3 +7,5 @@ site/
 .env
 .env.*
 !.env.example
+
+history/source-archives/*.zip
