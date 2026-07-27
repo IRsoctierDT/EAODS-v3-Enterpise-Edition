@@ -22,7 +22,7 @@ next_review_date: 2026-08-06
 | EXC-008 | Complete Orchestrator Handbook unavailable | Program Owner | Refurnish original or approve bounded reconstruction | open |
 | EXC-009 | Complete v4.6 Executive Control Tower unavailable | Program Owner | Refurnish original or approve bounded reconstruction | open |
 | EXC-010 | Complete v4.7 Governance Metrics Standard unavailable | Program Owner | Refurnish original or approve bounded reconstruction | open |
-| EXC-011 | ADR-0002 and canonical terminology/ID paths unresolved in this workspace | Architecture Owner | Resolve and register canonical repository URIs | open |
+| EXC-011 | Canonical repository paths registered in EAODS-HIST-URI-001 | Architecture Owner | Architecture Owner verification and Program Owner approval | pending-review |
 | EXC-012 | Early Volume 11 title conflicts with canonical Volume 11 | Architecture Owner | Approve explicit supersession crosswalk | controlled-open |
 | EXC-013 | Hardening/commercial backlog lacks item-level verification | Repository Owner | Classify each item as complete, pending, superseded, or excepted | open |
 

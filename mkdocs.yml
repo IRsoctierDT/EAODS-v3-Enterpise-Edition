@@ -72,6 +72,7 @@ nav:
       - Exception Queue: history/05_EXCEPTION_QUEUE.md
       - Volume 10 North Star Charter: history/06_VOLUME_10_NORTH_STAR_CHARTER.md
       - Historical Artifact Records: history/07_HISTORICAL_ARTIFACT_RECORDS.md
+      - Canonical Repository URI Register: history/08_CANONICAL_REPOSITORY_URI_REGISTER.md
   - Governance:
       - Governance: governance/GOVERNANCE.md
       - Security: governance/SECURITY.md
