@@ -21,7 +21,7 @@ governing_architecture: Volume 10
 | MIG-008 | Volume 11 | Control catalog and compliance framework | Stable control IDs and standards links | Terminology/control validation | canonical-validation |
 | MIG-009 | Ten agent precursors | Agent handbooks/specifications | Exact filename preservation; evidence-based mapping only | All ten recovered, superseded, or excepted | source-recovered |
 | MIG-010 | v3 and v3.2.0-alpha packages | Current repository artifact map | Version provenance and checksums | No package artifact orphaned | source-recovered |
-| MIG-011 | v4.6/v4.7/Orchestrator drafts | Current governance/operations artifacts | Reconstruction notice and scope approval | Original recovered or reconstruction approved | evidence-limited |
+| MIG-011 | v4.6/v4.7/Orchestrator drafts | Current governance/operations artifacts | Reconstruction notice and scope approval | Original recovered or reconstruction approved | v4.7-outstanding |
 | MIG-012 | Proposed Volumes 11–13 | Historical roadmap crosswalk | Proposal/canonical distinction | Canonical Volume 11 remains unchanged | partially-mapped |
 | MIG-013 | Hardening/commercial backlog | Authoritative roadmap | Evidence-backed implementation status | Each item classified | pending-reconciliation |
 

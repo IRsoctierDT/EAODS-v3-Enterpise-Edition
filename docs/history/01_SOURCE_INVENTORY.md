@@ -28,8 +28,8 @@ owner: Ivan Rozenblad
 | SRC-015 | Proposed Volumes 11–13 | Direct July 6 transcript | B | Historical plan recovered | Superseded taxonomy |
 | SRC-016 | ADR-0002 | PR #10/project record | B | Purpose verified; path unresolved here | Resolve path |
 | SRC-017 | Canonical terminology/object IDs | Repository maturity record | A/B | Capability verified; exact files unresolved here | Resolve paths |
-| SRC-018 | Enterprise Orchestrator Agent Handbook | Dated record, 2026-07-07; candidate predecessor recovered | B/A | 2026-07-06 predecessor recovered; 2026-07-07 draft unconfirmed | Pending owner confirmation |
-| SRC-019 | Executive Control Tower Specification | Dated record, 2026-07-08 | B | v4.6 metadata verified; body absent | Exception |
+| SRC-018 | Enterprise Orchestrator Agent Handbook | Recovered 2026-07-06 unit accepted by owner 2026-07-26 as standing for the dated reference | A | Accepted; supersedable if the 2026-07-07 draft surfaces | Accepted (EXC-008 closed) |
+| SRC-019 | Executive Control Tower Specification | Reconstruction accepted 2026-07-26 from SRC-026 | B/A | Complete body reconstructed (EAODS-HIST-V46-001); original bytes absent | Reconstruction accepted (EXC-009 closed) |
 | SRC-020 | Governance Operational Metrics Standard | Dated record, 2026-07-09 | B | v4.7 metadata verified; body absent | Exception |
 | SRC-021 | Hardening/commercial backlog | Direct July 6 transcript | B | Intent verified; implementation state unresolved | Reconcile |
 | SRC-022 | Reconstruction register v0.2.0 | Complete retained Markdown | A | Complete reconstructed control artifact | Incorporated |

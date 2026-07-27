@@ -19,8 +19,8 @@ next_review_date: 2026-08-06
 | EXC-005 | Ten Python sources and conversions recovered and integrity-registered (EAODS-HIST-ENT-001) | Program Owner | Closed under closure rule: originals recovered and registered 2026-07-26 | closed |
 | EXC-006 | 29-file Enterprise Edition archive recovered; 29 of 29 units reconciled (EAODS-HIST-ENT-001) | Program Owner | Closed under closure rule: originals recovered and registered 2026-07-26 | closed |
 | EXC-007 | v3.2.0-alpha packages and release notes recovered; no Git tag ever existed (EAODS-HIST-PKG-001) | Repository Owner | Closed under closure rule: bodies recovered and registered 2026-07-26; tag confirmed never created | closed |
-| EXC-008 | Orchestrator Handbook: 2026-07-06 predecessor recovered; 2026-07-07 draft unconfirmed | Program Owner | Owner confirms recovered unit stands for the 2026-07-07 draft, or refurnishes it | pending-review |
-| EXC-009 | v4.6 ECT: complete transmission registered (SRC-026), incl. all tables and Human Review Gate; original file bytes absent | Program Owner | Approve bounded reconstruction from the complete SRC-026 transmission, or refurnish the original file | pending-review |
+| EXC-008 | Orchestrator Handbook: recovered 2026-07-06 unit accepted by owner as standing for the dated reference | Program Owner | Closed under closure rule: owner acceptance recorded 2026-07-26; superseded if the 2026-07-07 draft surfaces | closed |
+| EXC-009 | v4.6 ECT: evidence-bounded reconstruction accepted (EAODS-HIST-V46-001) | Program Owner | Closed under closure rule: reconstruction from SRC-026 formally accepted 2026-07-26; original bytes supersede if recovered | closed |
 | EXC-010 | Complete v4.7 Governance Metrics Standard unavailable | Program Owner | Refurnish original or approve bounded reconstruction | open |
 | EXC-011 | Canonical repository paths registered in EAODS-HIST-URI-001 | Architecture Owner | Architecture Owner verification and Program Owner approval | pending-review |
 | EXC-012 | Early Volume 11 title conflicts with canonical Volume 11 | Architecture Owner | Approve explicit supersession crosswalk | controlled-open |
