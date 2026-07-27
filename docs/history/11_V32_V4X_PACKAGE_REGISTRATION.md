@@ -46,14 +46,21 @@ Two findings resolve this exception under the closure rule:
 
 ### EXC-009 — v4.6 Executive Control Tower (pending-review)
 
-A substantive conversation-derived excerpt of the v4.6-alpha specification
+A complete conversation-derived transmission of the v4.6-alpha specification is
+retained at
+`history/original-sources/conversation-evidence/EAODS_v4_6_ECT_full_transmission_2026-07-26.md`
+(all sections, field tables, and the Human Review Gate; every item on the
+document's own QA checklist is present). An earlier partial excerpt of the
+same specification
 (front matter, purpose, objectives, dashboard architecture, health rules, risk
 queue, evidence formula, recommendations engine, workflow, case study, QA
 checklist) is retained at
 `history/original-sources/conversation-evidence/EAODS_v4_6_ECT_conversation_excerpt_2026-07-26.md`.
-Table formatting was flattened in transit; the original file remains
-unrecovered. The excerpt is grade-B evidence sufficient for an owner-approved
-bounded reconstruction, which has not yet been requested. The v4.6 dependency
+The original file bytes remain unrecovered, so the transmission is registered
+as evidence rather than as the canonical artifact; it is sufficient for an
+owner-approved bounded reconstruction, which has not yet been requested. An
+unlabeled appended pipeline fragment (workflow-to-executive-approval) is
+retained with it as candidate v4.7 evidence (EXC-010). The v4.6 dependency
 chain (v4.1–v4.5) is now fully recovered, corroborating the excerpt's
 `depends_on` declarations.
 

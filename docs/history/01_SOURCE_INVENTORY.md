@@ -36,7 +36,8 @@ owner: Ivan Rozenblad
 | SRC-023 | `Pasted text.txt` | Complete retained transcript excerpt | A/B | Complete retained evidence file | Incorporated |
 | SRC-024 | PR #19 roadmap reconciliation | Verified project record | A/B | Merged; canonical roadmap established | Current governance |
 | SRC-025 | EAODS v4.0–v4.5 runtime packages | Recovered archives, registered 2026-07-26 | A | Seven packages recovered; 110 Python sources; SHA-256 registered | Recovered (see EAODS-HIST-PKG-001) |
-| SRC-026 | v4.6 ECT conversation excerpt | Pasted transcript received 2026-07-26 | B | Substantive body retained; formatting flattened; original file absent | Evidence for EXC-009 reconstruction |
+| SRC-026 | v4.6 ECT conversation transmissions | Two pasted transmissions received 2026-07-26; second complete with tables and Human Review Gate | B/A | Complete body retained per its own QA checklist; original file bytes absent | Evidence for EXC-009 reconstruction |
+| SRC-027 | "EAODS V3 Continuation" shared conversation | Public share link retrieved 2026-07-26 | A/B | July 6 ten-file upload, conversion request, and Volume 9 PR failure verified at source | Provenance record retained |
 
 ## Evidence grades
 
