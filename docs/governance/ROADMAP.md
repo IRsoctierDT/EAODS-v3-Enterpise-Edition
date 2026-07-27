@@ -40,4 +40,5 @@
 - [x] GitHub Pages activation
 - [x] Branch protection (required `validate` check, strict, admin-enforced)
 - [x] Historical migration-control baseline (Unified Historical Corpus registered under docs/history/)
+- [x] Agent operating manual (AGENTS.md / CLAUDE.md) governing autonomous AI work
 - [ ] Full historical migration (open exceptions EXC-001..013 in the corpus exception queue)

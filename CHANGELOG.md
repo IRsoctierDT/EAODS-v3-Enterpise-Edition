@@ -18,3 +18,4 @@
 - Reference implementation index linking the IANUA Agent Trust Broker as the realization of PAT-0001 and EAODS-CTRL-000184.
 - Unified Historical Corpus (1.0.0-reconstructed) under docs/history/ — migration-control baseline with source inventory, provenance ledger, exception queue, and Volume 10 north-star charter.
 - Documentation quality workflow.
+- Agent operating manual (AGENTS.md, vendor-neutral) with CLAUDE.md importing it — repository policy for autonomous AI increments, quality gates, and human approval boundaries.
