@@ -19,3 +19,4 @@
 - Unified Historical Corpus (1.0.0-reconstructed) under docs/history/ — migration-control baseline with source inventory, provenance ledger, exception queue, and Volume 10 north-star charter.
 - Documentation quality workflow.
 - Agent operating manual (AGENTS.md, vendor-neutral) with CLAUDE.md importing it — repository policy for autonomous AI increments, quality gates, and human approval boundaries.
+- Recovered 29-file EAODS v3 Enterprise Edition source corpus registered under history/ with SHA-256 integrity manifest (EAODS-HIST-ENT-001); exceptions EXC-005 and EXC-006 closed, EXC-008 advanced to pending-review; committed source-archive package evidence referenced by the reconciliation record.

@@ -19,7 +19,7 @@ governing_architecture: Volume 10
 | MIG-006 | Volume 9 | Resilience/HA/DR volume | Registration, cross-links, control coverage | Traceability validation | substantially-complete |
 | MIG-007 | Volume 10 | Governing EPOC/SRE architecture | North-star marker and controlled change process | No silent contradiction | governing |
 | MIG-008 | Volume 11 | Control catalog and compliance framework | Stable control IDs and standards links | Terminology/control validation | canonical-validation |
-| MIG-009 | Ten agent precursors | Agent handbooks/specifications | Exact filename preservation; evidence-based mapping only | All ten recovered, superseded, or excepted | evidence-limited |
+| MIG-009 | Ten agent precursors | Agent handbooks/specifications | Exact filename preservation; evidence-based mapping only | All ten recovered, superseded, or excepted | source-recovered |
 | MIG-010 | v3 and v3.2.0-alpha packages | Current repository artifact map | Version provenance and checksums | No package artifact orphaned | evidence-limited |
 | MIG-011 | v4.6/v4.7/Orchestrator drafts | Current governance/operations artifacts | Reconstruction notice and scope approval | Original recovered or reconstruction approved | evidence-limited |
 | MIG-012 | Proposed Volumes 11–13 | Historical roadmap crosswalk | Proposal/canonical distinction | Canonical Volume 11 remains unchanged | partially-mapped |

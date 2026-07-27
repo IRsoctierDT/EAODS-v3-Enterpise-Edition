@@ -17,6 +17,7 @@ This directory consolidates the latest Git-tracked EAODS-v3 repository with all 
 - `history/migration/inventory.csv`
 - `history/migration/duplicate-groups.json`
 - `history/migration/merge-report.md`
-- `history/source-archives/EAODS-v3-All-Folders-original.zip`
+- `history/source-archives/` (committed package evidence; the 80 MB / 40 MB clone snapshots `EAODS-v3-All-Folders-original.zip` and `EAODS-v3-local-collection.zip` are retained outside the repository with SHA-256 digests registered in `history/migration/checksums.sha256`)
+- `history/original-sources/` (extracted originals, including the 29-unit Enterprise Edition corpus — see `10_ENTERPRISE_EDITION_SOURCE_UNITS.md`)
 
 No historical revision was silently promoted over the latest canonical repository state.
