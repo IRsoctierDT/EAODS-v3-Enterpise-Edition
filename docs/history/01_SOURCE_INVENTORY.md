@@ -38,6 +38,9 @@ owner: Ivan Rozenblad
 | SRC-025 | EAODS v4.0–v4.5 runtime packages | Recovered archives, registered 2026-07-26 | A | Seven packages recovered; 110 Python sources; SHA-256 registered | Recovered (see EAODS-HIST-PKG-001) |
 | SRC-026 | v4.6 ECT conversation transmissions | Two pasted transmissions received 2026-07-26; second complete with tables and Human Review Gate | B/A | Complete body retained per its own QA checklist; original file bytes absent | Evidence for EXC-009 reconstruction |
 | SRC-027 | "EAODS V3 Continuation" shared conversation | Public share link retrieved 2026-07-26 | A/B | July 6 ten-file upload, conversion request, and Volume 9 PR failure verified at source | Provenance record retained |
+| SRC-028 | AI Operator Suite transmission v4.17.1–v4.28 (`EOADS-v17.1-v28.md`) | Owner-supplied file received 2026-07-27 | A | 13 standards recovered verbatim; SHA-256 registered | Recovered (see EAODS-HIST-AIO-001) |
+| SRC-029 | AI Operator Suite transmission v5.0–v6.6 (`EAODS-v5-alpha-v6.7-alpha.md`) | Owner-supplied file received 2026-07-27 | A | 10 standards recovered verbatim; v6.7 absent (EXC-015); SHA-256 registered | Recovered (see EAODS-HIST-AIO-001) |
+| SRC-030 | AI Operator Suite transmission v7.0–v8.3 (`EAODS-v7-alpha-v8.5-alpha.md`) | Owner-supplied file received 2026-07-27 | A | 13 standards recovered verbatim; v8.2/v8.4/v8.5 absent (EXC-016/017); SHA-256 registered | Recovered (see EAODS-HIST-AIO-001) |
 
 ## Evidence grades
 

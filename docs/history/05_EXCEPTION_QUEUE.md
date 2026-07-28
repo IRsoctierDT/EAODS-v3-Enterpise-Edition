@@ -25,6 +25,10 @@ next_review_date: 2026-08-06
 | EXC-011 | Canonical repository paths registered in EAODS-HIST-URI-001 | Architecture Owner | Architecture Owner verification and Program Owner approval | pending-review |
 | EXC-012 | Early Volume 11 title conflicts with canonical Volume 11 | Architecture Owner | Approve explicit supersession crosswalk | controlled-open |
 | EXC-013 | Hardening/commercial backlog lacks item-level verification | Repository Owner | Classify each item as complete, pending, superseded, or excepted | open |
+| EXC-014 | AI Operator Suite v4.12, v4.15, v4.16, v4.17 bodies unavailable (cited in recovered `extends:` chains; EAODS-HIST-AIO-001) | Program Owner | Recover original transmissions or artifacts; never synthesize from titles | open |
+| EXC-015 | v6.7 Cyber Resilience Testing, Validation & Continuous Improvement Framework unavailable (cited by v7.0; named in owner folder label) | Program Owner | Recover original transmission or artifact | open |
+| EXC-016 | v8.2 Capability Maturity Model, Assessment Methodology & Certification Framework unavailable (cited by v8.3) | Program Owner | Recover original transmission or artifact | open |
+| EXC-017 | v8.4 and v8.5 implied only by owner folder label; existence unverified | Program Owner | Confirm whether drafts ever existed; recover or record never-created | open |
 
 ## Closure rule
 
