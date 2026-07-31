@@ -1,7 +1,7 @@
 ---
 title: EAODS Canonical Historical Mapping Matrix
 document_id: EAODS-MIG-MAP-001
-version: 1.0.0-reconstructed
+version: 1.1.0-reconstructed
 status: active
 reconstructed: true
 ---
@@ -32,5 +32,14 @@ Each recovered source must add a row containing:
 
 | Original name/ID | Canonical name/ID | Relationship | Authority | Effective date | Review state |
 |---|---|---|---|---|---|
+| Ten Python agent sources (SRC-010, filenames per EAODS-HIST-ART-001) | EAODS v3 Enterprise Edition agent handbooks (`history/original-sources/EAODS_v3_Enterprise_Edition/Volume-02…08`) | replaced-by | EAODS-HIST-ENT-001 | 2026-07-26 | registered |
+| Ten Markdown agent conversions (SRC-011) | EAODS v3 Enterprise Edition agent handbooks | merged-into | EAODS-HIST-ENT-001 | 2026-07-26 | registered |
+| EAODS v3 Enterprise Edition, 29-file package (SRC-012) | Current governed repository model (ADR-0002); archival tree under `history/original-sources/EAODS_v3_Enterprise_Edition/` | superseded-by | EAODS-HIST-ENT-001 | 2026-07-26 | registered |
+| EAODS v3.2.0-alpha packages (SRC-013) | Current repository governance assets (AGENTS.md, workflows, templates); archival trees under `history/original-sources/` | superseded-by | EAODS-HIST-PKG-001 | 2026-07-26 | registered |
+| EAODS v4.x runtime packages v4.0–v4.5, 110 Python sources (SRC-025) | Current governed repository model (ADR-0002); archival trees under `history/original-sources/EAODS_v4_*` | superseded-by | EAODS-HIST-PKG-001 | 2026-07-26 | registered |
+| Transmission `EOADS-v17.1-v28.md` (SRC-028; label is owner shorthand for v4.17.1–v4.28) | Unit files `…/EAODS_AI_Operator_Suite_transmissions/units/v4.17.1-v4.28/` | split-into | EAODS-HIST-AIO-001 | 2026-07-27 | registered |
+| Transmission `EAODS-v5-alpha-v6.7-alpha.md` (SRC-029) | Unit files `…/units/v5.0-v6.6/` | split-into | EAODS-HIST-AIO-001 | 2026-07-27 | registered |
+| Transmission `EAODS-v7-alpha-v8.5-alpha.md` (SRC-030) | Unit files `…/units/v7.0-v8.3/` | split-into | EAODS-HIST-AIO-001 | 2026-07-27 | registered |
+| “Volume 11 — Enterprise AI Governance Runtime” (July 6 planning taxonomy; CON-001, EXC-012) | v17.3 Volume 11 — Enterprise Reference Control Catalog, Engineering Standards & Architecture Compliance (`17.3.10-alpha`) | superseded-by | 00_MASTER_CORPUS §5; CON-001 | 2026-07-21 | submitted-for-approval (EXC-012, Architecture Owner) |
 
 Permitted relationships are `renamed-to`, `replaced-by`, `split-into`, `merged-into`, `implements`, `governed-by`, and `superseded-by`.

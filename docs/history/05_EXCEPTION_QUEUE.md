@@ -1,7 +1,7 @@
 ---
 title: EAODS Historical Migration Exception Queue
 document_id: EAODS-MIG-EXC-001
-version: 1.0.0-reconstructed
+version: 1.1.0-reconstructed
 status: active
 reconstructed: true
 default_owner: Program Owner
@@ -28,7 +28,8 @@ next_review_date: 2026-08-06
 | EXC-014 | AI Operator Suite v4.12, v4.15, v4.16, v4.17 bodies unavailable (cited in recovered `extends:` chains; EAODS-HIST-AIO-001) | Program Owner | Recover original transmissions or artifacts; never synthesize from titles | open |
 | EXC-015 | v6.7 Cyber Resilience Testing, Validation & Continuous Improvement Framework unavailable (cited by v7.0; named in owner folder label) | Program Owner | Recover original transmission or artifact | open |
 | EXC-016 | v8.2 Capability Maturity Model, Assessment Methodology & Certification Framework unavailable (cited by v8.3) | Program Owner | Recover original transmission or artifact | open |
-| EXC-017 | v8.4 and v8.5 implied only by owner folder label; existence unverified | Program Owner | Confirm whether drafts ever existed; recover or record never-created | open |
+| EXC-017 | v8.4 and v8.5 bodies unrecovered; v8.5 now cited by full title (“Enterprise EAODS Reference Implementation Blueprint & Transformation Playbook”) in the recovered v8.6 `extends:` chain (2026-07-30, EAODS-HIST-AIO-001 addendum) — first direct evidence beyond the folder label; v8.4 remains label-only | Program Owner | Confirm whether drafts ever existed; recover or record never-created | open |
+| EXC-018 | v17.3 Volume 12 (Enterprise Reference Metrics, KPIs, KRIs & Executive Performance Measurement, `17.3.11-alpha`) was previously unregistered in this corpus; dated authoring evidence (2026-07-21) exists in the owner’s conversation archive | Program Owner | Recover conversation-evidence package and register; never synthesize from titles | open |
 
 ## Closure rule
 

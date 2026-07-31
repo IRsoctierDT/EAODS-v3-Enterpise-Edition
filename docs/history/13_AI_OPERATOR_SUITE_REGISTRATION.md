@@ -1,13 +1,13 @@
 ---
-title: EAODS AI Operator Suite Registration (v4.17.1 – v8.3)
+title: EAODS AI Operator Suite Registration (v4.17.1 – v8.7)
 document_id: EAODS-HIST-AIO-001
-version: 1.0.0
+version: 1.1.0
 status: registered
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
 ---
 
-# EAODS AI Operator Suite Registration (v4.17.1 – v8.3)
+# EAODS AI Operator Suite Registration (v4.17.1 – v8.7)
 
 This record registers three recovered transmission files of the
 **Enterprise AI Operator Documentation Suite**, supplied by the Program Owner
@@ -93,3 +93,25 @@ layer — with v5.0 declaring supersession of the "v4.x Architectural Metadata
 Model". These declarations are recorded as historical statements of the
 drafts; canonical supersession decisions remain with the current governed
 model (ADR-0002) and are not enacted by this registration.
+
+## Addendum — 2026-07-30 supply (v8.6, v8.7)
+
+Two further standards were supplied by the Program Owner on 2026-07-30, each
+received as **three identical retransmissions** in a live session; one
+canonical copy of each is preserved verbatim (with a provenance comment)
+under `…/EAODS_AI_Operator_Suite_transmissions/units/v8.6-v8.7/`:
+
+| Unit | Title | Status | SHA-256 (prefix) |
+|---|---|---|---|
+| v8.6-alpha | Enterprise Reference Architecture Patterns, Technology Profiles & Deployment Topologies Standard | Architecture Draft | `78e91c15` |
+| v8.7-alpha | Enterprise Configuration Management, Baseline Security & Drift Governance Standard | Architecture Draft | `5067def4` |
+
+Evidence effects on the exception queue:
+
+- **EXC-017:** v8.6's `extends:` chain cites *EAODS v8.5 Enterprise EAODS
+  Reference Implementation Blueprint & Transformation Playbook* by full title —
+  the first direct evidence for v8.5 beyond the owner folder label. Bodies of
+  v8.4/v8.5 remain unrecovered; the exception stays open.
+- **EXC-016:** v8.2 is cited by neither v8.6 nor v8.7; unaffected.
+- The v8.7 `extends:` chain (v8.6 → v8.5 → v8.1, v6.0) extends the recorded
+  lineage continuously through v8.7.

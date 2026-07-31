@@ -1,7 +1,7 @@
 ---
 title: EAODS Unified Historical Master Corpus
 document_id: EAODS-HIST-MASTER-001
-version: 1.0.0-reconstructed
+version: 1.1.0-reconstructed
 status: controlled-working-baseline
 classification: internal
 owner: Ivan Rozenblad
@@ -121,14 +121,12 @@ EAODS-v3 began, in part, with a request to transform ten Python agent sources in
 9. `portfolio_documentation_agent copy.py`
 10. `threat_intel_agent copy.py`
 
-The source bodies and converted handbooks are not present in the current evidence set. Their filenames and intended transformation are verified; their substantive duties must not be reconstructed from filenames alone.
+**Update (2026-07-26):** the ten source bodies and their ten Markdown conversions were recovered and integrity-registered under EAODS-HIST-ENT-001 with SHA-256 digests (EXC-005 closed). The caution against reconstructing duties from filenames alone no longer applies — the substantive content is on record.
 
-Conversation evidence also reports:
+Conversation evidence also reported two packages, both since recovered:
 
-- a 29-file EAODS v3 Enterprise Edition package containing foundation documents, ten agent handbooks, templates, a reference registry, and case studies; and
-- an EAODS v3.2.0-alpha package containing release notes, a repository map, runtime roadmap, `agents.yaml`, and issue/PR templates.
-
-These package bodies remain unresolved.
+- the 29-file EAODS v3 Enterprise Edition package (foundation documents, ten agent handbooks, templates, reference registry, case studies) — recovered 2026-07-26 with **29 of 29 units reconciled** (EAODS-HIST-ENT-001; EXC-006 closed); and
+- the EAODS v3.2.0-alpha package (release notes, repository map, runtime roadmap, `agents.yaml`, issue/PR templates) — bodies recovered 2026-07-26 and registered under EAODS-HIST-PKG-001; both GitHub repositories were checked and **no v3.2.0-alpha Git tag or release ever existed** (EXC-007 closed).
 
 ## 7. Later draft lineage
 
