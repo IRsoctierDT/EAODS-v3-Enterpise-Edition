@@ -1,7 +1,7 @@
 ---
 title: EAODS Historical Source Inventory
 document_id: EAODS-HIST-INV-001
-version: 1.0.0-reconstructed
+version: 1.1.0-reconstructed
 status: controlled-working-baseline
 reconstructed: true
 owner: Ivan Rozenblad
@@ -15,7 +15,8 @@ owner: Ivan Rozenblad
 | SRC-002 | v17.1 blueprint | Canonical lineage reference | A/C | Title/line verified; corpus absent | Exception |
 | SRC-003 | v17.2 manual/playbook | Canonical lineage reference | A/C | Title/line verified; corpus absent | Exception |
 | SRC-004 | v17.3 guide | Canonical lineage and roadmap | A/C | Baseline verified | Governed baseline |
-| SRC-005 | Volumes 1–7 | Conversation/roadmap references | C/D | Bodies and filenames absent | Exception |
+| SRC-005 | Volumes 1–7 | Dated conversation transmissions of 2026-07-21, registered 2026-07-30 | B | Reconstructions formally accepted 2026-07-30 (EAODS-HIST-V173-001; EXC-004 closed); canonical filenames pending migration | Reconstruction-accepted |
+| SRC-031 | v17.3 Volume 12 transmission | Dated conversation transmission of 2026-07-21, registered 2026-07-30 | B | Reconstruction formally accepted 2026-07-30 (EAODS-HIST-V173-001; EXC-018 closed) | Reconstruction-accepted |
 | SRC-006 | Volume 8 | Roadmap status | A/C | Draft status verified | Resolve canonical path |
 | SRC-007 | Volume 9 | Roadmap and PR #10 lineage | A/B | Completion corroborated | Validate registration |
 | SRC-008 | Volume 10 | Canonical project record | A/B | Title, version, scope, sample object verified | Governing |

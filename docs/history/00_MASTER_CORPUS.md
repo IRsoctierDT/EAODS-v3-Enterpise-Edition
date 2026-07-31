@@ -1,7 +1,7 @@
 ---
 title: EAODS Unified Historical Master Corpus
 document_id: EAODS-HIST-MASTER-001
-version: 1.1.0-reconstructed
+version: 1.2.0-reconstructed
 status: controlled-working-baseline
 classification: internal
 owner: Ivan Rozenblad
@@ -33,7 +33,7 @@ EAODS is governed as an **Enterprise Reference Operating Model** organized aroun
 | v17.2 | Domain 03 Operations Manual and Executive Playbook | Operating procedures and executive governance | Lineage verified; full source unavailable |
 | v17.3 | Domain 03 Reference Implementation and Platform Engineering Guide | Governed reference implementation and platform-engineering baseline | Current historical baseline |
 
-The v17.3 line contains references to Volumes 1–11. Volume 8 was recorded as drafted, Volume 9 as completed, Volume 10 as completed and governing, and Volume 11 as completed. The complete historical bodies of Volumes 1–7 are not presently recovered.
+The v17.3 line comprises twelve volumes. Volume 8 was recorded as drafted, Volume 9 as completed, Volume 10 as completed and governing, and Volume 11 as completed. **Update (2026-07-30):** complete conversation-derived transmissions of Volumes 1–7 and Volume 12 were registered and their evidence-bounded reconstructions formally accepted by the Program Owner (EAODS-HIST-V173-001; EXC-004 and EXC-018 closed) — the line now has accepted transmission-level content for all twelve volumes; original bytes supersede if recovered.
 
 ## 3. Volume 9 integration
 

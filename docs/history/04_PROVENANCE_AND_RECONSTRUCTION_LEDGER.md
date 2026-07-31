@@ -1,7 +1,7 @@
 ---
 title: EAODS Provenance and Reconstruction Ledger
 document_id: EAODS-PROV-LED-001
-version: 1.1.0-reconstructed
+version: 1.2.0-reconstructed
 status: active
 reconstructed: true
 ---
@@ -11,7 +11,7 @@ reconstructed: true
 | ID | Assertion | Basis | Confidence | Limitation |
 |---|---|---:|---:|---|
 | REC-001 | Release lineage spans v17.0–v17.3 | Canonical project record | 100% | Historical corpora not all present |
-| REC-002 | v17.3 references Volumes 1–11 | Roadmap/project evidence | 100% | Volumes 1–7 filenames/bodies absent |
+| REC-002 | v17.3 comprises Volumes 1–12 | Roadmap/project evidence; accepted transmissions (EAODS-HIST-V173-001) | 100% | Volumes 1–7 and 12 reconstructions accepted 2026-07-30; canonical repository filenames not yet assigned |
 | REC-003 | Volume 10 is the architectural north star | Explicit user and project decision | 100% | Must remain encoded in canonical governance |
 | REC-004 | Volume 10 is v17.3.9-alpha and extends Volumes 1–9 | Recovered project record | 100% | Full artifact is outside current workspace |
 | REC-005 | Volume 11 is v17.3.10-alpha and extends Volumes 1–10 | Recovered project record | 100% | Full artifact is outside current workspace |

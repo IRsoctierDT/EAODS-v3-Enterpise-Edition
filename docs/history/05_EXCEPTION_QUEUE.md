@@ -1,7 +1,7 @@
 ---
 title: EAODS Historical Migration Exception Queue
 document_id: EAODS-MIG-EXC-001
-version: 1.2.0-reconstructed
+version: 1.3.0-reconstructed
 status: active
 reconstructed: true
 default_owner: Program Owner
@@ -15,7 +15,7 @@ next_review_date: 2026-08-06
 | EXC-001 | Complete v17.0 corpus unavailable | Program Owner | Recover original repository, export, attachment, or artifact | open |
 | EXC-002 | Complete v17.1 corpus unavailable | Program Owner | Recover original repository, export, attachment, or artifact | open |
 | EXC-003 | Complete v17.2 corpus unavailable | Program Owner | Recover original repository, export, attachment, or artifact | open |
-| EXC-004 | Volumes 1–7: complete conversation-derived transmissions registered 2026-07-30 (EAODS-HIST-V173-001); original file bytes still unrecovered; canonical filenames unconfirmed | Program Owner | Formally accept evidence-bounded reconstructions (EXC-009 precedent) or recover original bytes | pending-review |
+| EXC-004 | Volumes 1–7: conversation-derived transmissions registered and evidence-bounded reconstructions formally accepted by the Program Owner 2026-07-30 (EAODS-HIST-V173-001) | Program Owner | Closed under closure rule: reconstructions formally accepted 2026-07-30; original bytes supersede if recovered | closed |
 | EXC-005 | Ten Python sources and conversions recovered and integrity-registered (EAODS-HIST-ENT-001) | Program Owner | Closed under closure rule: originals recovered and registered 2026-07-26 | closed |
 | EXC-006 | 29-file Enterprise Edition archive recovered; 29 of 29 units reconciled (EAODS-HIST-ENT-001) | Program Owner | Closed under closure rule: originals recovered and registered 2026-07-26 | closed |
 | EXC-007 | v3.2.0-alpha packages and release notes recovered; no Git tag ever existed (EAODS-HIST-PKG-001) | Repository Owner | Closed under closure rule: bodies recovered and registered 2026-07-26; tag confirmed never created | closed |
@@ -29,7 +29,7 @@ next_review_date: 2026-08-06
 | EXC-015 | v6.7 Cyber Resilience Testing, Validation & Continuous Improvement Framework unavailable (cited by v7.0; named in owner folder label) | Program Owner | Recover original transmission or artifact | open |
 | EXC-016 | v8.2 Capability Maturity Model, Assessment Methodology & Certification Framework unavailable (cited by v8.3) | Program Owner | Recover original transmission or artifact | open |
 | EXC-017 | v8.4 and v8.5 bodies unrecovered; v8.5 now cited by full title (“Enterprise EAODS Reference Implementation Blueprint & Transformation Playbook”) in the recovered v8.6 `extends:` chain (2026-07-30, EAODS-HIST-AIO-001 addendum) — first direct evidence beyond the folder label; v8.4 remains label-only | Program Owner | Confirm whether drafts ever existed; recover or record never-created | open |
-| EXC-018 | v17.3 Volume 12 (`17.3.11-alpha`): complete conversation-derived transmission registered 2026-07-30 (EAODS-HIST-V173-001); original file bytes still unrecovered | Program Owner | Formally accept evidence-bounded reconstruction (EXC-009 precedent) or recover original bytes | pending-review |
+| EXC-018 | v17.3 Volume 12 (`17.3.11-alpha`): conversation-derived transmission registered and evidence-bounded reconstruction formally accepted by the Program Owner 2026-07-30 (EAODS-HIST-V173-001) | Program Owner | Closed under closure rule: reconstruction formally accepted 2026-07-30; original bytes supersede if recovered | closed |
 
 ## Closure rule
 
