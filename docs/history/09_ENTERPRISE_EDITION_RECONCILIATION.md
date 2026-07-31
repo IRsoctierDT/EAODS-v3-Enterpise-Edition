@@ -21,3 +21,15 @@ This directory consolidates the latest Git-tracked EAODS-v3 repository with all 
 - `history/original-sources/` (extracted originals, including the 29-unit Enterprise Edition corpus — see `10_ENTERPRISE_EDITION_SOURCE_UNITS.md`)
 
 No historical revision was silently promoted over the latest canonical repository state.
+
+
+## Addendum — 2026-07-30 snapshot recovery
+
+Both externally retained clone snapshot archives
+(`EAODS-v3-All-Folders-original.zip`, `EAODS-v3-local-collection.zip`) were
+recovered and verified byte-exact against the digests registered in
+`history/migration/checksums.sha256`. They remain outside this repository per
+the standing retention decision; recovered copies, the outer snapshot zip, and
+the complete original EAODS-v3 git history (bundle, fourteen branches, PR #10
+fix-branch commit `932b27d`, and stash) are preserved in the owner's private
+archive (EAODS-HIST-GAP-001 §4–§5).
