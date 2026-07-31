@@ -1,7 +1,7 @@
 ---
 title: EAODS v3.2 and v4.x Package Registration
 document_id: EAODS-HIST-PKG-001
-version: 1.0.0
+version: 1.1.0
 status: registered
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
@@ -44,7 +44,7 @@ Two findings resolve this exception under the closure rule:
    checked on 2026-07-26: no tags and no releases exist in either. The
    v3.2.0-alpha release existed as package artifacts, not as a Git tag/commit.
 
-### EXC-009 — v4.6 Executive Control Tower (pending-review)
+### EXC-009 — v4.6 Executive Control Tower (closed 2026-07-26)
 
 A complete conversation-derived transmission of the v4.6-alpha specification is
 retained at
@@ -57,8 +57,9 @@ queue, evidence formula, recommendations engine, workflow, case study, QA
 checklist) is retained at
 `history/original-sources/conversation-evidence/EAODS_v4_6_ECT_conversation_excerpt_2026-07-26.md`.
 The original file bytes remain unrecovered, so the transmission is registered
-as evidence rather than as the canonical artifact; it is sufficient for an
-owner-approved bounded reconstruction, which has not yet been requested. An
+as evidence rather than as the canonical artifact. The evidence-bounded
+reconstruction was formally accepted on 2026-07-26 (EAODS-HIST-V46-001), closing
+EXC-009 under the closure rule; the original bytes supersede it if recovered. An
 unlabeled appended pipeline fragment (workflow-to-executive-approval) is
 retained with it as candidate v4.7 evidence (EXC-010). The v4.6 dependency
 chain (v4.1–v4.5) is now fully recovered, corroborating the excerpt's
