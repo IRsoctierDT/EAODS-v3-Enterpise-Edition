@@ -1,7 +1,7 @@
 ---
 title: EAODS AI Operator Suite Registration (v4.17.1 – v8.7)
 document_id: EAODS-HIST-AIO-001
-version: 1.1.0
+version: 1.2.0
 status: registered
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
@@ -78,10 +78,12 @@ exceptions, never synthesized:
 - **v8.4, v8.5** — implied only by the owner's folder label
   (`…v8.5-alpha…`); no body and no textual reference recovered. → EXC-017
 
-The gap between the registered v4.x runtime packages (through v4.5, plus the
-v4.6 reconstruction and open v4.7 exception EXC-010) and the first recovered
-suite unit (v4.17.1) is otherwise unevidenced in these transmissions; only the
-four versions listed above are directly cited.
+**Update (2026-07-30):** the gap between the registered v4.x runtime packages
+and the first recovered suite unit (v4.17.1) is closed — the complete
+v4.6–v4.17 band was recovered as a file artifact and registered under
+EAODS-HIST-GAP-001 (see `units/v4.6-v4.21-longgap/`), closing EXC-010 and
+EXC-014. The v4.17 unit's proposed v4.18–v4.21 titles were superseded by the
+delivered titles registered here.
 
 ## Lineage note
 
