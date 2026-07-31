@@ -1,7 +1,7 @@
 ---
 title: EAODS v17.3 Volume Transmissions Registration (Volumes 1–7, 12)
 document_id: EAODS-HIST-V173-001
-version: 1.0.0
+version: 1.1.0
 status: registered
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
@@ -59,13 +59,23 @@ evidence, not as an artifact.
 
 ## Exception dispositions established by this registration
 
-- **EXC-004 (Volumes 1–7)** → evidence registered; state advanced to
-  `pending-review`. Original file bytes remain unrecovered, so these units are
-  registered as **evidence sufficient for owner-approved evidence-bounded
-  reconstructions** (the EXC-009 precedent). Closure requires the Program
-  Owner's formal acceptance; original bytes supersede if recovered.
-- **EXC-018 (Volume 12)** → evidence registered; state advanced to
-  `pending-review` on the same terms.
+- **EXC-004 (Volumes 1–7)** → evidence registered 2026-07-30; the eight
+  evidence-bounded reconstructions were **formally accepted by the Program
+  Owner on 2026-07-30**, closing the exception under the closure rule (the
+  EXC-009 precedent). Original bytes supersede if recovered.
+- **EXC-018 (Volume 12)** → evidence registered and reconstruction
+  **formally accepted by the Program Owner on 2026-07-30**; closed on the
+  same terms.
+
+## Acceptance record
+
+| Field | Value |
+|---|---|
+| Accepting authority | Program Owner (Ivan Rozenblad) |
+| Acceptance date | 2026-07-30 |
+| Scope | All eight registered units (Volumes 1–7 and 12) |
+| Basis | Closure rule: evidence-bounded reconstruction formally accepted |
+| Supersession | Original file bytes supersede these units if recovered |
 
 ## Effects on related records
 
