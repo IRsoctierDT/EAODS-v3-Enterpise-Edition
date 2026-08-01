@@ -24,3 +24,7 @@
 - Recovered EAODS v3.2 Enhanced Operator Edition and v4.0-4.5 runtime packages registered under history/ with SHA-256 manifest (EAODS-HIST-PKG-001); EXC-007 closed (v3.2.0-alpha recovered; no Git tag ever existed), EXC-009 advanced with registered conversation evidence.
 - Recovered 29-file EAODS v3 Enterprise Edition source corpus registered under history/ with SHA-256 integrity manifest (EAODS-HIST-ENT-001); exceptions EXC-005 and EXC-006 closed, EXC-008 advanced to pending-review; committed source-archive package evidence referenced by the reconciliation record.
 - Recovered Enterprise AI Operator Documentation Suite transmissions (36 standards, v4.17.1-alpha through v8.3-alpha) registered under history/ with per-unit SHA-256 manifest (EAODS-HIST-AIO-001); new exceptions EXC-014 through EXC-017 opened for versions referenced but not recovered (v4.12/v4.15/v4.16/v4.17, v6.7, v8.2, v8.4/v8.5).
+
+### Fixed
+
+- Documentation workflows check out full Git history (`fetch-depth: 0`) so the portal's git-revision "last updated" dates reflect real file history instead of the shallow-checkout commit date.
