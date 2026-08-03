@@ -90,6 +90,7 @@ nav:
       - Software Supply Chain Security: security/supply-chain-security.md
       - AI Risk Management: security/ai-risk-management.md
       - MITRE ATT&CK Mapping Standard: security/mitre-attack-mappings.md
+      - ATT&CK Transcription Worksheet: security/attack-mapping-worksheet.md
   - Threat Models:
       - Threat-Model Library: threat-models/index.md
       - Library Scope, Method & Register: threat-models/threat-model-library.md
