@@ -10,6 +10,7 @@ related:
   - EAODS-ARCH-GOV-001
   - EAODS-ARCH-EOM-001
   - EAODS-MIG-EXC-001
+  - EAODS-GOV-RISK-001
   - ADR-0002
   - STD-0002
   - docs/history/05_EXCEPTION_QUEUE.md
@@ -50,6 +51,19 @@ This document governs exceptions arising from:
 EAODS v17.3 Volume 10 is the operational north star. ADR-0002 reserves material change to the four-pillar operating model for board review and Program Owner approval, which is why an exception that would in effect amend the operating model is not grantable at council level and escalates under Section 12. STD-0002 requires that every stated relationship between governed objects be a registered, validated edge, which is why an exception record names the artifact it deviates from rather than describing it in prose.
 
 **Naming reconciliation.** The v4.20-alpha standard names the top approval authority for critical risk acceptance the Executive Governance Committee; the approved sibling documents name the same body the Enterprise Governance Board (EGB). These refer to one body, and this document uses Enterprise Governance Board throughout. Likewise, the v4.20-alpha roles of Asset Owner and Business Owner are read against the governance architecture as the accountable Domain Owner or Platform Owner for the asset in question. No new body and no new authority is created by this reconciliation.
+
+## 3.1 Boundary with the risk register
+
+This document and **EAODS-GOV-RISK-001 (Risk Management and Risk Register)** are
+built from the same source and govern overlapping records. A control or standard
+deviation is raised as an exception here; the residual risk it leaves is rated
+and accepted under EAODS-GOV-RISK-001 §8. One event commonly produces one record
+in each register, cross-referenced by identifier.
+
+This document governs **exception lifecycle and closure**, including the four
+closure branches of §11.2, which apply to risk-acceptance records as well.
+EAODS-GOV-RISK-001 governs **risk rating and acceptance authority**. Neither
+document overrides the other within the other's scope.
 
 ## 4. Prohibited uses
 
@@ -164,7 +178,7 @@ Renewal is a fresh decision by the same authority, on a re-run risk analysis and
 
 ### 11.1 The worked precedent
 
-The historical migration exception queue (EAODS-MIG-EXC-001) is the worked precedent for closure in EAODS. It ran eighteen exceptions — the full EXC-001 through EXC-018 range — to a closed state, under a single explicit closure rule, with each closure naming its branch, its accountable owner, and its date. Owners across the queue were the Program Owner, the Architecture Owner, and the Repository Owner, with the Program Owner as the register default.
+The historical migration exception queue (EAODS-MIG-EXC-001) is the worked precedent for closure in EAODS. It ran eighteen exceptions — the full EXC-001 through EXC-018 range — to a closed state, under a single explicit closure rule, with an accountable owner and a date on every closure. Fifteen of the eighteen name a closure branch explicitly; **EXC-011, EXC-012, and EXC-013 close on verification-and-approval language that predates this standard**. They are recorded here as pre-rule closures, grandfathered rather than reopened; the branch rule in §11.2 applies prospectively. Owners across the queue were the Program Owner, the Architecture Owner, and the Repository Owner, with the Program Owner as the register default.
 
 The queue closed an exception only when one of four conditions held:
 

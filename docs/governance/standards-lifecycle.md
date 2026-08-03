@@ -58,11 +58,28 @@ Every artifact declares exactly one classification.
 | Guideline | Recommended practice |
 | Reference | Informational material |
 
-Under STD-0001, enterprise standards are located in `docs/standards/` under the `STD` prefix and architecture decision records in `architecture/adr/` under the `ADR` prefix. STD-0001's registered-prefix table additionally records `THR`, `RUN`, and `PAT` as reserved for the then-forthcoming threat-model, runbook, and pattern libraries, "not to be used until those libraries are established". Those libraries are now established — `docs/threat-models/`, `docs/runbooks/`, and `docs/patterns/` — and all three prefixes are registered in `standards/vocabulary/object-identifiers.yaml` with an owning authority and a `defined_in` location, so artifacts of those classifications mint identifiers under this lifecycle in the ordinary way. Where STD-0001's prose and the identifier registry diverge on reservation status, the registry governs (Section 11); reconciling the STD-0001 wording is a maintenance item for that standard's owner and is not decided here.
+Under STD-0001, enterprise standards are located in `docs/standards/` under the `STD` prefix and architecture decision records in `architecture/adr/` under the `ADR` prefix. The `THR`, `RUN`, and `PAT` prefixes were originally reserved pending establishment of their libraries. Those libraries are established — `docs/threat-models/`, `docs/runbooks/`, and `docs/patterns/` are populated — and all three prefixes are registered in `standards/vocabulary/object-identifiers.yaml` with an owning authority and a `defined_in` location. STD-0001 records this state directly, so artifacts of those classifications mint identifiers under this lifecycle in the ordinary way, with no divergence to reconcile.
 
 ## 5. Required document metadata
 
-Every EAODS artifact shall carry the following metadata. The right-hand column records how each requirement is realized by the front matter and structure that approved documents in this repository already use.
+Two front-matter schemas are in force, and an artifact must use the one its
+location requires. `scripts/validate_front_matter.py` enforces the framework
+schema in CI over `docs/frameworks/` and `frameworks/`; documents elsewhere use
+the governance schema. Authoring against the wrong one fails the build.
+
+**Framework volumes** (`docs/frameworks/**`) — the nine keys CI requires, exactly:
+`title`, `version`, `owner`, `suite`, `status`, `classification`, `purpose`,
+`architecture_domain`, `review_cycle`.
+
+**Governance-tier documents** (this document, and everything under
+`docs/governance/`, `docs/security/`, `docs/architecture/`, `docs/operations/`,
+`docs/standards/`) — the eight keys the approved set uses: `title`,
+`document_id`, `version`, `status`, `owner`, `review_gate`,
+`governing_architecture`, `related`.
+
+`docs/standards/documentation-standards.md` is authoritative for both schemas.
+The requirements below are the governance-level obligations each schema realizes;
+where a requirement names a key, it names the key of the schema in force.
 
 | Required field | Realization in this repository |
 |---|---|
@@ -89,6 +106,7 @@ Approved documents additionally carry a `document_id` front-matter label. These 
 
 | Status | Description |
 |---|---|
+| Proposed | Authored and published for review; the pre-review state used across the current baseline. Equivalent to Draft for the purposes of Section 6.2 gating. |
 | Draft | Under development |
 | Architecture Review | Technical review underway |
 | Governance Review | Governance validation |
@@ -113,7 +131,7 @@ The enterprise document lifecycle runs from business need through draft, technic
 | Supersede | Superseding artifact Active; superseded artifact Deprecated, then Archived | The same authority that would approve the superseding artifact | Supersession record (Section 10); change impact assessment; dependency review | Both artifacts carry the supersession link, and the earlier artifact is preserved rather than deleted |
 | Retire | Deprecated, then Archived | The approval authority for the classification | Retirement rationale; disposition of dependent artifacts; confirmation that no active artifact depends on the retired provisions | Artifact is Archived as historical reference only, and its identifier is retained with a retired status |
 
-Publication is not a stage an artifact may skip into: an artifact reaches Active only from Approved, and reaches Approved only through the reviews its classification requires.
+An artifact reaches Active only from Approved, and reaches Approved only through the reviews its classification requires. Publication and approval are distinct: the v1.0.0 baseline publishes its authored set at `status: proposed` with the board review gates open and disclosed (see `docs/governance/release-readiness-v1.0.0.md` §6). Publishing under review is permitted and recorded; representing a `proposed` artifact as Approved is not.
 
 ## 7. Version semantics
 
