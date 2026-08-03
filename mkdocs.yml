@@ -93,3 +93,10 @@ nav:
       - Roadmap: governance/ROADMAP.md
   - Architecture:
       - Enterprise Operating Model: architecture/ENTERPRISE_OPERATING_MODEL.md
+      - Architecture Principles: architecture/architecture-principles.md
+      - Enterprise Reference Architecture: architecture/enterprise-reference-architecture.md
+      - Business Architecture: architecture/business-architecture.md
+      - Capability Model: architecture/capability-model.md
+      - Value Streams: architecture/value-streams.md
+      - Solution Architecture Templates: architecture/solution-architecture-templates.md
+      - Architecture Governance Model: architecture/architecture-governance-model.md
