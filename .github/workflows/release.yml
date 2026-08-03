@@ -30,18 +30,31 @@ jobs:
       - name: Install PDF toolchain
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
+          sudo apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex texlive-latex-recommended \
+            texlive-fonts-recommended texlive-latex-extra
+          xelatex --version | head -1
 
       - name: Build framework PDF library
         run: |
+          set -euo pipefail
           mkdir -p pdf
+          expected=$(ls docs/frameworks/EAODS-v17.3/*.md | wc -l)
           for f in docs/frameworks/EAODS-v17.3/*.md; do
             base=$(basename "$f" .md)
+            # No error masking: a conversion failure must fail the release.
             pandoc "$f" -o "pdf/${base}.pdf" \
               --from=gfm --pdf-engine=xelatex -V geometry:margin=2.5cm \
-              -V colorlinks=true --toc || echo "skip $base"
+              -V colorlinks=true --toc
           done
-          tar -czf "EAODS-${GITHUB_REF_NAME}-pdf-library.tar.gz" pdf
+          built=$(ls pdf/*.pdf | wc -l)
+          echo "PDFs built: ${built} of ${expected} expected"
+          if [ "${built}" -ne "${expected}" ]; then
+            echo "::error::PDF library incomplete (${built}/${expected})"
+            exit 1
+          fi
+          tar -czf "${RUNNER_TEMP}/EAODS-${GITHUB_REF_NAME}-pdf-library.tar.gz" pdf
+          mv "${RUNNER_TEMP}/EAODS-${GITHUB_REF_NAME}-pdf-library.tar.gz" .
           ls -la pdf
 
       - name: Generate SBOM (SPDX)
