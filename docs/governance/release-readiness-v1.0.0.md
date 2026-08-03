@@ -2,7 +2,7 @@
 title: EAODS v1.0.0 Release Readiness and Security Review
 document_id: EAODS-GOV-REL-001
 version: 1.0.0
-status: proposed
+status: approved
 owner: Program Owner
 review_gate: Program Owner executive approval
 governing_architecture: EAODS v17.3 Volume 10
@@ -31,10 +31,10 @@ measured facts rather than assertion.
 | CI/CD pipelines passing | Met | `Documentation Quality` and `CodeQL` green on `main` |
 | Security review completed | Met — with findings | Section 4 |
 | Release notes prepared | Met | `CHANGELOG.md` §1.0.0 |
-| Version tagged | Pending | Executed at approval |
-| GitHub Release published | Pending | Executed at approval |
+| Version tagged | Met | `v1.0.0` tagged 2026-08-03 |
+| GitHub Release published | Met | Published by the release workflow on tag |
 | GitHub Pages updated | Automatic | `pages.yml` deploys on merge to `main` |
-| Executive approval | **Open** | This document is the submission |
+| Executive approval | **Granted** | Program Owner approval recorded 2026-08-03 |
 
 ## 3. Documentation quality gate
 
@@ -105,7 +105,13 @@ for a deliberate owner decision rather than flipped during a release.
 These are disclosed rather than deferred silently: a reader can tell exactly
 what has been reviewed by a human and what has not.
 
-## 7. Recommendation
+## 7. Approval
+
+**Approved by the Program Owner on 2026-08-03.** v1.0.0 is released with the
+limitations in section 6 disclosed and accepted; the open board review gates
+continue against the published baseline.
+
+## 7.1 Recommendation as submitted
 
 The release is technically ready. All automated gates pass, no blocking
 security finding exists, and content integrity is evidenced end to end. The
