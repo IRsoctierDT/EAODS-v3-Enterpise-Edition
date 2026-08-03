@@ -63,8 +63,16 @@ nav:
       - RUN-0001 Service Recovery Execution: runbooks/RUN-0001-service-recovery-execution.md
       - RUN-0002 Error Budget Exhaustion Response: runbooks/RUN-0002-error-budget-exhaustion-response.md
       - RUN-0003 Compliance Deviation Response: runbooks/RUN-0003-compliance-deviation-response.md
+  - Security (Domain 03):
+      - Zero Trust Architecture: security/zero-trust-architecture.md
+      - Identity, Access & Secrets: security/identity-and-secrets-management.md
+      - Secure Development Lifecycle: security/secure-sdlc.md
+      - Software Supply Chain Security: security/supply-chain-security.md
+      - AI Risk Management: security/ai-risk-management.md
+      - MITRE ATT&CK Mapping Standard: security/mitre-attack-mappings.md
   - Threat Models:
       - Threat-Model Library: threat-models/index.md
+      - Library Scope, Method & Register: threat-models/threat-model-library.md
       - THR-0001 Compromised Service Identity: threat-models/THR-0001-compromised-service-identity.md
       - THR-0002 LLM Instruction Injection: threat-models/THR-0002-llm-instruction-injection.md
       - THR-0003 Assurance Evidence Tampering: threat-models/THR-0003-assurance-evidence-tampering.md
