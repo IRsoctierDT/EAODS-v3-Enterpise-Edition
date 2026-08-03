@@ -77,7 +77,7 @@ Every autonomous or semi-autonomous agent is a first-class enterprise identity g
 
 The identity lifecycle is registration, verification, credential issuance, capability assignment, production operation, continuous validation, credential rotation, retirement. Credentials declare issuing authority, validity period, rotation interval, revocation status, associated agent, and cryptographic profile; long-lived credentials are minimized in favor of short-lived, automatically rotated credentials, consistent with EAODS-CTRL-000184 and PAT-0001.
 
-Authorization is capability-based: permissions are assigned as discrete capabilities — telemetry read, evidence write, workflow execute, detection analysis, incident assistance, policy evaluation, report generation, recovery coordination — rather than unrestricted administrative access. Capability inheritance is explicitly documented and approved, and delegated authority never exceeds the authority of the originating identity, carrying a defined maximum duration, approval authority, monitoring requirement, and automatic expiration.
+Authorization is capability-based: permissions are assigned as discrete capabilities — the source capability classes are telemetry read, evidence write, workflow execute, detection analysis, incident assistance, policy evaluation, report generation and recovery coordination, cited there as examples rather than as a closed set — rather than unrestricted administrative access. Capability inheritance is explicitly documented and approved, and delegated authority never exceeds the authority of the originating identity, carrying a defined maximum duration, approval authority, monitoring requirement, and automatic expiration.
 
 | Trust level | Description |
 |---|---|
@@ -152,7 +152,7 @@ Injection that steers an agent *within* its authorized scopes is not blocked by 
 
 Changes affecting risk classification, validation methodology, approval authority, autonomy classification, human oversight requirements, capability authorization, trust evaluation, red team procedures, regression acceptance criteria, drift thresholds, or AI safety constraints require Security Architecture Review Board review and Program Owner approval before publication. Approval confirms that AI authority remains bounded, human accountability remains non-delegable, evaluation evidence remains reproducible, and every AI-initiated action remains attributable to a verified enterprise identity.
 
-## Sources and traceability
+## 13. Sources and traceability
 
 | Source (repo-relative) | Contribution |
 |---|---|

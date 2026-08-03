@@ -46,19 +46,35 @@ engineering procedure.
 The following statement is normative and must be preserved through revision.
 
 **No MITRE ATT&CK technique identifier, sub-technique identifier, or tactic
-identifier appears in any EAODS source unit reviewed for this standard.** The
+identifier appears in any Domain 03 source authority for this standard.** The
 v5.0–v6.6 transmission set and the v17.0–v17.2 volume set were searched in full for
 ATT&CK naming and for technique- and tactic-shaped tokens; neither returned a
-match. MITRE ATT&CK is named in the corpus only as a framework the Volume 10
-planning record intended to integrate alongside ISO 27001 and NIST CSF 2.0
-(`docs/history/00_MASTER_CORPUS.md`).
+match.
+
+ATT&CK does appear elsewhere in the repository, and this standard records those
+occurrences rather than claiming they do not exist. None is a Domain 03 source
+authority, and none carries transcription provenance:
+
+- as a framework named for future integration alongside ISO 27001 and NIST CSF
+  2.0 (`docs/history/00_MASTER_CORPUS.md`;
+  `docs/history/07_HISTORICAL_ARTIFACT_RECORDS.md`), and as an outstanding
+  compliance-mapping recommendation (v4.16);
+- as an optional vulnerability-record field named "MITRE ATT&CK technique
+  mapping", with no identifiers enumerated (v4.17, v4.17.1);
+- as literal technique identifiers used as illustrative fixtures in the v3
+  Enterprise Edition detection-matcher appendices.
+
+The third category is the one that matters here: those identifiers are sample
+data in a superseded prototype, carry no recorded source, and are therefore
+unusable as provenance. They are not promoted into any governed mapping record.
 
 Consequences:
 
 1. This standard defines mapping **method**, not a technique catalogue.
-2. No technique identifier shall be written into any EAODS artifact until it is
-   transcribed from published MITRE ATT&CK content by a named human reviewer and
-   recorded with that provenance.
+2. No technique identifier shall be written into any governed EAODS artifact
+   until it is transcribed from published MITRE ATT&CK content by a named human
+   reviewer and recorded with that provenance. Preserved historical sources are
+   not rewritten to satisfy this rule; they are simply not cited as provenance.
 3. A mapping record with no technique identifier is valid and complete under this
    standard. Its technique field carries the state `unassigned`, never a guess.
 4. Inventing, inferring, or pattern-matching a technique identifier is a defect of
@@ -254,4 +270,6 @@ approval.
 | `docs/architecture/ENTERPRISE_OPERATING_MODEL.md` | House structure; Domain 03 cross-pillar position; AI operating boundaries; traceability-to-controls-and-evidence requirement |
 | `docs/standards/canonical-terminology-and-identifiers.md` | STD-0001 identifier format, registration-before-use, stability, and retention rules applied in sections 5 and 12 |
 | `docs/standards/cross-artifact-traceability.md` | STD-0002 registered edge types reused in section 4; the no-unregistered-identifier rule underwriting section 3 |
-| `docs/history/00_MASTER_CORPUS.md` | The corpus's only literal reference to MITRE ATT&CK — as a framework intended for integration alongside ISO 27001 and NIST CSF 2.0 — evidencing section 3 |
+| `docs/history/00_MASTER_CORPUS.md` · `docs/history/07_HISTORICAL_ARTIFACT_RECORDS.md` · `history/original-sources/EAODS_AI_Operator_Suite_transmissions/units/v4.6-v4.21-longgap/EAODS-v4.16-alpha-cybersecurity-core-domain-alignment-matrix.md` | ATT&CK named as a framework for future integration alongside ISO 27001 and NIST CSF 2.0, and as an outstanding compliance-mapping recommendation — the framework-level occurrences recorded in section 3 |
+| `history/original-sources/EAODS_AI_Operator_Suite_transmissions/units/v4.6-v4.21-longgap/EAODS-v4.17-alpha-enterprise-threat-vulnerability-management-standard.md` · `.../units/v4.17.1-v4.28/EAODS-v4.17.1-alpha-vulnerability-intake-and-triage-workflow.md` | "MITRE ATT&CK technique mapping" as an optional vulnerability-record field with no identifiers enumerated — the field-level occurrences recorded in section 3 |
+| `history/original-sources/EAODS_v3_Enterprise_Edition/Source-Code-Appendices/detection_matcher_agent.py` · `.../Volume-05-Security-Agents/detection-matcher-agent_handbook_v3.md` | The only literal technique identifiers in the repository, present as prototype fixture data without recorded provenance — the occurrences section 3 excludes from use |
