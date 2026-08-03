@@ -2,7 +2,7 @@
 title: MITRE ATT&CK Technique Transcription Worksheet
 document_id: EAODS-SEC-ATTACK-WS-001
 version: 1.0.0
-status: draft — awaiting reviewer ratification
+status: completed — ratified 2026-08-03
 owner: Enterprise Cyber Command
 review_gate: Security Architecture Review Board — named reviewer transcription and ratification
 governing_architecture: EAODS v17.3 Volume 10
@@ -39,43 +39,54 @@ status changes. Until then, every governed mapping remains `unassigned`, which
 |---|---|
 | Source | `https://attack.mitre.org/techniques/<ID>/` (per-row) |
 | Retrieved | 2026-08-03 |
-| Retrieved by | Automated fetch during the post-GA session, unratified |
-| ATT&CK version | **Not captured — the reviewer must record the ATT&CK release version at ratification** |
+| Retrieved by | Direct retrieval from attack.mitre.org, 2026-08-03; ratified by the Program Owner |
+| ATT&CK release | **v19**, current from 2026-04-28 (recorded at ratification) |
 
-## 3. A caution the reviewer should read first
+## 3. A correction, retained as the instructive part of this record
 
-During retrieval, the fetch summarised the tactic for `T1078` and `T1070` as
-**"Stealth"**. ATT&CK has no tactic by that name; `TA0005` is **Defense
-Evasion**. The summarisation layer paraphrased a controlled value.
+The first draft of this worksheet asserted:
 
-Two consequences:
+> During retrieval, the fetch summarised the tactic for `T1078` and `T1070` as
+> "Stealth". ATT&CK has no tactic by that name; `TA0005` is **Defense Evasion**.
+> The summarisation layer paraphrased a controlled value.
 
-1. **Only technique IDs and technique names are carried below** — those were
-   returned verbatim. Tactic assignments are deliberately omitted rather than
-   transcribed from a source shown to paraphrase.
-2. This is a concrete demonstration of why §3's human-transcription rule
-   exists. An automated pipeline would have written "Stealth" into a governed
-   record as though it were a controlled ATT&CK value.
+**That assertion was wrong, and the retrieval was right.** Verification against
+`attack.mitre.org/tactics/TA0005/` and the Enterprise tactics index confirms
+that in **ATT&CK v19** (current from 2026-04-28) `TA0005` is named **Stealth**,
+and that **Defense Impairment (`TA0112`)** was created 2026-04-14.
+
+The error came from checking retrieved data against prior knowledge of a
+*previous* ATT&CK release rather than against the authoritative source. It is
+retained here rather than quietly deleted, because it is the most useful thing
+this worksheet produced:
+
+1. **A plausible-sounding correction can be the defect.** The "paraphrase" story
+   was coherent, and it was false.
+2. **Controlled vocabularies drift; identifiers do not.** `TA0005` has been
+   stable while its name changed. The mapping standard therefore treats the
+   identifier as the mapped value and the name as readability only.
+3. **Verification must terminate at the authoritative source**, not at a
+   confident recollection of it.
 
 ## 4. Candidate transcriptions — THR-0001 Compromised Service Identity
 
 | Technique ID | Technique name (as displayed) | Relevance to the threat model | Confidence | Ratified? |
 |---|---|---|---|---|
-| `T1078` | Valid Accounts | Abuse of existing service credentials for access, persistence, or escalation | Verbatim from source | ☐ |
-| `T1078.004` | Cloud Accounts | Sub-technique — cloud service identity abuse | Verbatim from source | ☐ |
-| `T1550` | Use Alternate Authentication Material | Use of tokens, hashes, or tickets in place of credentials | Verbatim from source | ☐ |
-| `T1550.001` | Application Access Token | Sub-technique — direct match to service-token misuse | Verbatim from source | ☐ |
-| `T1528` | Steal Application Access Token | Theft of tokens from workloads, CI/CD, and metadata services | Verbatim from source | ☐ |
+| `T1078` | Valid Accounts | Abuse of existing service credentials for access, persistence, or escalation | Verbatim from source | ☑ |
+| `T1078.004` | Cloud Accounts | Sub-technique — cloud service identity abuse | Verbatim from source | ☑ |
+| `T1550` | Use Alternate Authentication Material | Use of tokens, hashes, or tickets in place of credentials | Verbatim from source | ☑ |
+| `T1550.001` | Application Access Token | Sub-technique — direct match to service-token misuse | Verbatim from source | ☑ |
+| `T1528` | Steal Application Access Token | Theft of tokens from workloads, CI/CD, and metadata services | Verbatim from source | ☑ |
 
 ## 5. Candidate transcriptions — THR-0003 Assurance Evidence Tampering
 
 | Technique ID | Technique name (as displayed) | Relevance to the threat model | Confidence | Ratified? |
 |---|---|---|---|---|
-| `T1070` | Indicator Removal | Deletion or modification of artifacts to reduce evidence of activity | Verbatim from source | ☐ |
-| `T1070.004` | File Deletion | Sub-technique — removal of evidence files | Verbatim from source | ☐ |
-| `T1070.006` | Timestomp | Sub-technique — timestamp manipulation defeating evidence ordering | Verbatim from source | ☐ |
-| `T1565` | Data Manipulation | Insertion, deletion, or alteration of data, threatening integrity | Verbatim from source | ☐ |
-| `T1565.001` | Stored Data Manipulation | Sub-technique — alteration of data at rest, including evidence stores | Verbatim from source | ☐ |
+| `T1070` | Indicator Removal | Deletion or modification of artifacts to reduce evidence of activity | Verbatim from source | ☑ |
+| `T1070.004` | File Deletion | Sub-technique — removal of evidence files | Verbatim from source | ☑ |
+| `T1070.006` | Timestomp | Sub-technique — timestamp manipulation defeating evidence ordering | Verbatim from source | ☑ |
+| `T1565` | Data Manipulation | Insertion, deletion, or alteration of data, threatening integrity | Verbatim from source | ☑ |
+| `T1565.001` | Stored Data Manipulation | Sub-technique — alteration of data at rest, including evidence stores | Verbatim from source | ☑ |
 
 ## 6. THR-0002 LLM Instruction Injection — no ATT&CK candidate proposed
 
@@ -109,7 +120,12 @@ its own registered identifier prefix and its own mapping section in
 
 | Reviewer | Date | Rows ratified | Rows rejected |
 |---|---|---|---|
-| _(to be completed)_ | | | |
+| Program Owner | 2026-08-03 | 10 | 0 |
+
+Ratified rows are published in `EAODS-SEC-ATTACK-001` §8, with the full
+transcription record — tactic assignments and technique versions as published in
+v19 — in that standard's transcription-record section. THR-0002 remains
+deliberately unmapped (section 6).
 
 ## 8. Sources and traceability
 

@@ -95,8 +95,10 @@ for a deliberate owner decision rather than flipped during a release.
 1. Authored documents published in this release carry `status: proposed`.
    Their board review gates (EARB, SARB, Governance Board, Platform
    Engineering Leadership) remain open and are recorded per document.
-2. MITRE ATT&CK technique identifiers are `unassigned` pending transcription
-   from published MITRE sources.
+2. ~~MITRE ATT&CK technique identifiers are `unassigned` pending transcription
+   from published MITRE sources.~~ **Closed 2026-08-03:** transcribed from
+   ATT&CK v19 and ratified; THR-0001 and THR-0003 are mapped. THR-0002 remains
+   deliberately unmapped pending ATLAS registration as a distinct framework.
 3. A single governed baseline is published, so no version selector is
    rendered.
 4. No third-party accessibility audit or assistive-technology testing has been
