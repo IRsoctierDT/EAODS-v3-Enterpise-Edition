@@ -70,7 +70,7 @@ unusable as provenance. They are not promoted into any governed mapping record.
 
 **Transcription performed 2026-08-03 (ATT&CK v19).** Technique identifiers now
 appearing in this standard were transcribed from `attack.mitre.org` on that date
-and ratified by the Program Owner; see section 9 for the transcription record.
+and ratified by the Program Owner; see section 14 for the transcription record.
 The statement above remains true of the *source authorities* — the identifiers
 come from MITRE, not from the corpus, which is exactly what this section
 requires.
@@ -192,7 +192,7 @@ a named denominator is not a measurement and shall not pass review.
 
 THR-0001 (compromised service identity) is mapped below. Behavior names are taken
 from the corpus behavioral and hunt vocabularies; technique identifiers were
-transcribed from ATT&CK v19 on 2026-08-03 (section 9). The example asserts no
+transcribed from ATT&CK v19 on 2026-08-03 (section 14). The example asserts no
 coverage state above C1: no validation evidence exists in the sources for these
 behaviors, and a transcribed identifier does not by itself advance coverage.
 
@@ -200,17 +200,23 @@ behaviors, and a transcribed identifier does not by itself advance coverage.
 |---|---|---|---|---|
 | Credential theft and replay | Credential abuse | `T1078` Valid Accounts · `T1550.001` Application Access Token | Identity Abuse Hunt | EAODS-CTRL-000184 · PAT-0001 |
 | Scope escalation | Privilege escalation | `T1078` Valid Accounts | Privilege Escalation Hunt | PAT-0001 |
-| Identity authority compromise | Anomalous authentication | `T1528` Steal Application Access Token · `T1550` Use Alternate Authentication Material | Identity Abuse Hunt | PAT-0004 · RUN-0001 |
-| Revocation lag | Anomalous authentication | `T1078.004` Cloud Accounts | Identity Abuse Hunt | EAODS-CTRL-000184 |
+| Issuer compromise | Anomalous authentication | `T1528` Steal Application Access Token · `T1550` Use Alternate Authentication Material | Identity Abuse Hunt | PAT-0004 · RUN-0001 · PAT-0003 |
+| Revocation lag | Anomalous authentication | `T1078.004` Cloud Accounts | Identity Abuse Hunt | PAT-0001 · EAODS-CTRL-000184 |
 
 THR-0003 (assurance evidence tampering) is mapped on the same terms:
 
 | THR-0003 scenario | Behavior name | ATT&CK technique | Mitigating control |
 |---|---|---|---|
-| Evidence deletion | Evidence tampering | `T1070.004` File Deletion | EAODS-CTRL-000184 · PAT-0003 |
-| Evidence record alteration | Evidence tampering | `T1565.001` Stored Data Manipulation | PAT-0003 |
-| Evidence ordering defeat | Evidence tampering | `T1070.006` Timestomp | PAT-0003 |
-| Broad indicator suppression | Evidence tampering | `T1070` Indicator Removal | PAT-0003 · RUN-0003 |
+| Suppression | Evidence tampering | `T1070` Indicator Removal · `T1070.004` File Deletion | PAT-0003 · RUN-0003 |
+| Forgery | Evidence tampering | `unassigned` | PAT-0003 |
+| Post-hoc modification | Evidence tampering | `T1565.001` Stored Data Manipulation · `T1070.006` Timestomp | PAT-0003 |
+| Assurance capture | Evidence tampering | `unassigned` | PAT-0003 |
+
+Scenario names are the literal scenario names of THR-0001 and THR-0003. Two
+THR-0003 scenarios carry `unassigned`: no reviewed ATT&CK technique describes
+forgery of assurance evidence or capture of the assurance function itself, and
+§3(3) makes `unassigned` a valid and complete value rather than a gap to be
+filled by approximation.
 
 **THR-0002 (LLM instruction injection) remains `unassigned`.** No ATT&CK
 Enterprise technique describes instruction injection against a language model,
@@ -317,7 +323,7 @@ is the mapped value and the name is carried only for readability.
 above; a name change alone does not invalidate a mapping, but a technique
 deprecation or re-identification does.
 
-## 14. Sources and traceability
+## 15. Sources and traceability
 
 | Source (repo-relative) | Contribution |
 |---|---|

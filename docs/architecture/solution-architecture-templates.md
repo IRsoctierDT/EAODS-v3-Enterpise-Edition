@@ -136,6 +136,10 @@ New solution architecture documents shall contain the following sections; fields
 | Identification | Solution name; owner; status; version; review date (all required) |
 | Business context | Driving business requirement; requirement owner (required) |
 | Logical architecture | Layers occupied and consumed per Section 3 (required); component diagram |
+| Layer positioning | Position stated in all three EAODS-ARCH-ERA-001 §5 views — logical, canonical platform layers, enterprise layer model (required) |
+| Canonical service model | The EAODS-ARCH-ERA-001 §7 eleven-field block for each service the solution introduces (required) |
+| Data and observability | Authoritative system of record per data category, and the health, metric, log, trace and audit signals emitted, per EAODS-ARCH-ERA-001 §11 (required) |
+| Constraints conformance | Statement of conformance to EAODS-ARCH-ERA-001 §13 (required) |
 | Pattern selection | Reference patterns used; governed library patterns applied (`PAT-` citations) or Volume 11 exception record (required) |
 | Topology | Selected topology A–E with rationale (required); trust zone placement of every component (required) |
 | Capability mapping | Required functions mapped to Section 6 capability profiles (required) |

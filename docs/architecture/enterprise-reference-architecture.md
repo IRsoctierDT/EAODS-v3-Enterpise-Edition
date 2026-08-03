@@ -10,6 +10,7 @@ related:
   - EAODS-ARCH-EOM-001
   - EAODS-ARCH-PRIN-001
   - EAODS-ARCH-SOL-001
+  - EAODS-GOV-EXC-001
   - ADR-0002
   - STD-0001
   - STD-0002
@@ -37,7 +38,7 @@ Where this document defines structure, the sibling artifacts define use: EAODS-A
 | What is the operational north star? | EAODS v17.3 Volume 10 |
 | What is the constitutional authority? | The v16.0 Enterprise Digital Constitution, inherited through v17.3 |
 | What happens on conflict? | Current approved repository artifacts and ADRs take precedence over historical drafts (EAODS-ARCH-EOM-001) |
-| How are deviations handled? | All components conform unless an approved architectural exception exists, recorded as an ADR |
+| How are deviations handled? | All components conform unless an approved architectural exception exists. The exception is raised, classified, time-bound, reviewed and closed under EAODS-GOV-EXC-001, with the EARB as approving authority; an ADR records the *architectural decision*, not the exception's lifecycle |
 
 Historical units cited here are conversation-derived evidence, retained with provenance; they inform this architecture but do not silently redefine it.
 

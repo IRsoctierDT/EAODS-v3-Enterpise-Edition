@@ -26,7 +26,8 @@ These templates apply to new and revised artifacts under `docs/` and `architectu
 
 | Document type | Location | Template | Structure authority |
 |---|---|---|---|
-| Enterprise standard or framework document | `docs/standards/`, `docs/frameworks/` | §4 | STD-0001, STD-0002, approved `docs/architecture/` siblings |
+| Enterprise standard (governance tier) | `docs/standards/` and comparable trees | §4, Template A1 |
+| Framework volume | `docs/frameworks/` | §4, Template A2 | STD-0001, STD-0002, approved `docs/architecture/` siblings |
 | Architecture pattern | `docs/patterns/` | §5 | `docs/patterns/index.md`, PAT-0001 |
 | Operational runbook | `docs/runbooks/` | §6 | `docs/runbooks/index.md`, RUN-0001 |
 | Threat model | `docs/threat-models/` | §7 | `docs/threat-models/index.md`, THR-0001 |
@@ -51,6 +52,32 @@ ADR-0002 requires every major artifact to define, where applicable, eleven eleme
 Two front-matter conventions are in use. Documents under `docs/architecture/`, and this standard, carry the YAML block of §4. The library exemplars read for this document — PAT-0001, RUN-0001, THR-0001 — instead open with a single bolded metadata line, and ADR-0002 uses the distinct YAML field set reproduced in §8. Follow the convention of the library you are contributing to.
 
 ## 4. Template A — standard or framework document
+
+**Two schemas are in force.** `scripts/validate_front_matter.py` enforces a
+nine-key schema over `docs/frameworks/` and `frameworks/` in CI. Documents
+elsewhere use the eight-key governance schema. Using the wrong block fails the
+build, so pick by location before copying.
+
+### Template A2 — framework volume (`docs/frameworks/`)
+
+```yaml
+---
+title: "<full canonical title>"
+version: "<x.y.z-stage>"
+owner: "<owning authority>"
+suite: "<suite identity>"
+status: "<lifecycle status>"
+classification: "<classification>"
+purpose: "<one-line purpose>"
+architecture_domain: "<domain>"
+review_cycle: "<cadence>"
+---
+```
+
+All nine keys are required by CI. Additional keys (`extends`,
+`constitutional_authority`, `migrated_from`) are permitted.
+
+### Template A1 — governance tier (everything else)
 
 ````markdown
 ---
@@ -220,6 +247,8 @@ related:
 5. **Relationships use the registered edge vocabulary.** State relationships with the STD-0002 edge types — `implements`, `operationalizes`, `mitigates`, `applies_to`, `emits_evidence_to`, `governed_by` — and add the matching graph edge, since the graph records what the documents claim.
 
 ## 10. Pre-submission checklist
+
+Framework-located documents use the nine-key schema of Template A2; confirm `python scripts/validate_front_matter.py` passes before review.
 
 - [ ] Correct template used for the document type and location; every `<angle-bracket>` placeholder replaced.
 - [ ] Applicable ADR-0002 contribution elements present, or consciously not applicable.

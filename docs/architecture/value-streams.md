@@ -10,6 +10,7 @@ related:
   - EAODS-ARCH-BIZ-001
   - EAODS-ARCH-EOM-001
   - EAODS-ARCH-PRIN-001
+  - EAODS-GOV-MAN-001
   - ADR-0002
   - STD-0002
   - docs/frameworks/EAODS-v17.3/volume-10-platform-operations.md
@@ -44,6 +45,14 @@ The required enterprise value streams (v13.0 Volume 2) and their coverage in thi
 
 Value streams represent end-to-end organizational outcomes. They are not departmental processes, and no stream is owned by a single organizational unit.
 
+
+**Owner and authority conventions.** The Owners element names one of the six
+capability ownership roles or a named governance body — never an executing
+function or system, which belong in the stage description. Gate authorities are
+the approved authorities of EAODS-GOV-MAN-001 §6; where a stage names a
+"Governance Board", read the approved authority for that decision class per the
+reconciliation table in EAODS-ARCH-BIZ-001 §8.
+
 ## 3. Common anatomy of an EAODS value stream
 
 Every stream in this document is described with the same five elements, so that streams can be compared, measured, and audited consistently.
@@ -56,7 +65,7 @@ Every stream in this document is described with the same five elements, so that 
 | Evidence | Records produced at each stage and registered for Continuous Assurance |
 | Metrics | Throughput, bottlenecks, waste, investment cost, operating cost, and value contribution, per the value stream economics model |
 
-Three constraints apply to every stream. Cybersecurity review is mandatory for material enterprise changes, so Domain 03 participates in every stream rather than in a security stream of its own. Escalation follows the documented E1–E5 path from Team Lead to Board-Level Review, with thresholds documented before production operation. Every decision recorded in a stream carries its identifier, requesting authority, approving authority, affected capabilities, supporting evidence, associated risks, expected benefits, implementation owner, and review date.
+Three constraints apply to every stream. Cybersecurity review is mandatory for material enterprise changes, so Domain 03 participates in every stream rather than in a security stream of its own. Escalation follows the approved fixed path of EAODS-GOV-MAN-001 §9; the E1–E5 tier notation maps onto it per EAODS-ARCH-BIZ-001 §10, with thresholds documented before production operation. Every decision recorded in a stream carries its identifier, requesting authority, approving authority, affected capabilities, supporting evidence, associated risks, expected benefits, implementation owner, and review date.
 
 ## 4. Idea to governed change
 

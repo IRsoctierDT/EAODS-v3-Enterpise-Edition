@@ -143,9 +143,20 @@ Authorization decisions are deterministic, explainable, version-controlled, evid
 
 ## 8. Policy evaluation inputs
 
-Every authorization request evaluates identity, authentication strength, trust level, resource classification, action requested, device health, network context, time, business risk, policy version, and active incident status. Each of these inputs is required; a missing input is an ambiguity and resolves fail-closed. Decisions additionally weigh business context and environmental signals, and device posture where it is available.
+Authorization inputs fall into two sets.
 
-## 9. Decision outcomes and enforcement actions
+**Required inputs**, evaluated on every request regardless of identity class:
+identity, authentication strength, trust level, resource classification, action
+requested, and policy version. A missing required input is an ambiguity and
+resolves fail-closed.
+
+**Contextual inputs**, evaluated where the identity class makes them available:
+device health and posture, network context, time, business risk, and active
+incident status. Absence of a contextual input is not by itself a denial; the
+policy states how each is weighted when present. This matches
+EAODS-SEC-IAM-001 §8 ("device posture where available") and keeps the
+fail-closed rule enforceable for workload and service identities, which have no
+device posture to report. ## 9. Decision outcomes and enforcement actions
 
 | Outcome | Description |
 |---|---|
@@ -181,16 +192,18 @@ Every AI system holds a unique enterprise identity, a defined operational owner,
 
 Before any tool invocation, an agent validates its registered identity, trust classification, approved capability, workflow authorization, policy compliance, requested tool permissions, data classification, and human approval requirements. Agents may never elevate their own privileges, and direct agent-to-agent privilege delegation is prohibited.
 
+**Ladder reconciliation.** This is the *automation authority* ladder (A0–A5), derived from v5.1. It is distinct from the **agent trust ladder T0–T5** published in EAODS-SEC-AIRISK-001 §5 (v7.6 Trust Fabric), which is what the `trust level` authorization input carries. An agent holds both: a trust level (T) and an automation authority (A). Neither implies the other.
+
 | Trust level | Description |
 |---|---|
-| T0 | Advisory only |
-| T1 | Read-only enterprise access |
-| T2 | Controlled recommendations |
-| T3 | Limited approved actions |
-| T4 | Human-approved operational execution |
-| T5 | Emergency automation, pre-approved playbooks only |
+| A0 | Advisory only |
+| A1 | Read-only enterprise access |
+| A2 | Controlled recommendations |
+| A3 | Limited approved actions |
+| A4 | Human-approved operational execution |
+| A5 | Emergency automation, pre-approved playbooks only |
 
-Newly registered agents default to T0. Human approval is mandatory before production configuration changes, privileged identity modifications, destructive operations, enterprise policy publication, risk acceptance decisions, legal or regulatory submissions, and financial transactions.
+Newly registered agents default to A0 automation authority, and to T0 on the EAODS-SEC-AIRISK-001 §5 trust ladder. Human approval is mandatory before production configuration changes, privileged identity modifications, destructive operations, enterprise policy publication, risk acceptance decisions, legal or regulatory submissions, and financial transactions.
 
 ## 13. Continuous verification
 
@@ -231,7 +244,7 @@ Approval requires the Security Architecture Review Board and the Program Owner t
 - identity remains the primary control plane and no zone confers implicit trust;
 - decision and enforcement remain architecturally separate, and the PDP never executes;
 - fail-closed behavior holds for every ambiguous verification and every missing policy input;
-- AI agent authority remains bounded, defaults to T0, and self-elevation stays prohibited;
+- AI agent authority remains bounded, defaults to A0 automation authority and T0 trust level, and self-elevation stays prohibited;
 - just-in-time and break-glass privilege expire automatically and are reviewed after the event;
 - every authorization decision is explainable, replayable, and traceable to a policy version.
 
