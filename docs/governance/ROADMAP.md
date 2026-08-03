@@ -41,4 +41,4 @@
 - [x] Branch protection (required `validate` check, strict, admin-enforced)
 - [x] Historical migration-control baseline (Unified Historical Corpus registered under docs/history/)
 - [x] Agent operating manual (AGENTS.md / CLAUDE.md) governing autonomous AI work
-- [ ] Full historical migration (open exceptions EXC-001..017 in the corpus exception queue)
+- [x] Full historical migration — all 18 corpus exceptions closed (2026-08-03); v17.3 Volumes 1–12 published in `docs/frameworks/EAODS-v17.3/`; historical corpora and band transmissions registered under `history/` with accepted reconstructions
