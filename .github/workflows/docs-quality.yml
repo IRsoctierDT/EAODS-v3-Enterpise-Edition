@@ -37,6 +37,9 @@ jobs:
       - name: Validate cross-artifact traceability
         run: python scripts/validate_traceability.py
 
+      - name: Validate internal links and navigation
+        run: python scripts/validate_links.py
+
       - name: Detect prohibited secret-like files
         shell: bash
         run: |
