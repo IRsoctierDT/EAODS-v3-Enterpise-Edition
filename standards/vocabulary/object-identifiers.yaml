@@ -6,7 +6,7 @@
 #   - Identifiers are never reused or renumbered once published.
 #   - Width is fixed per prefix; new prefixes use 6 digits.
 
-registry_version: "1.0.0"
+registry_version: "1.1.0"
 identifier_pattern: "^[A-Z][A-Z0-9-]*-[0-9]{4,6}$"
 
 prefixes:
@@ -72,5 +72,51 @@ prefixes:
     defined_in: "docs/threat-models/"
     example: THR-0001
     owner: Enterprise Cyber Command
+
+  - prefix: DATA
+    object_type: Data platform asset
+    digits: 6
+    defined_in: "EAODS v17.3 Volume 3 — Data Platform & Observability"
+    example: DATA-001284
+    owner: Platform Engineering
+
+  - prefix: ID
+    object_type: Identity object
+    digits: 6
+    defined_in: "EAODS v17.3 Volume 4 — Identity & Zero Trust"
+    example: ID-009428
+    owner: Enterprise Cyber Command
+
+  - prefix: AGENT
+    object_type: AI agent registration
+    digits: 5
+    defined_in: "EAODS v17.3 Volume 5 — Automation Fabric & Agent Runtime"
+    example: AGENT-00128
+    owner: AI Operations Center
+
+  - prefix: KG
+    object_type: Knowledge-graph entity
+    digits: 6
+    defined_in: "EAODS v17.3 Volume 6 — Knowledge Graph & Digital Twin"
+    example: KG-000942
+    owner: Engineering Governance
+
+  - prefix: PIPE
+    object_type: Delivery pipeline
+    digits: 5
+    defined_in: "EAODS v17.3 Volume 7 — DevSecOps & GitOps"
+    example: PIPE-00061
+    owner: Platform Engineering
+
+  - prefix: KPI
+    object_type: Performance indicator
+    digits: 5
+    defined_in: "EAODS v17.3 Volume 12 — Metrics, KPIs & KRIs"
+    example: KPI-00428
+    owner: Enterprise Platform Operations Center
+
+# Width note: prefixes registered 2026-08-03 from migrated historical volumes
+# keep the zero-padding width of their as-published canonical examples
+# (stability rule 3 prevails over the six-digit default for new prefixes).
 
 reserved_prefixes: []

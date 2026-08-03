@@ -35,6 +35,12 @@ The registries are the source of truth. Prose in any volume that conflicts with 
 | `ADR` | Architecture decision record | `architecture/adr/` | Enterprise Architecture Review Board |
 | `STD` | Enterprise standard | `docs/standards/` | Engineering Governance |
 | `TERM` | Canonical vocabulary term | Canonical terms registry | Engineering Governance |
+| `DATA` | Data platform asset | Volume 3 | Platform Engineering |
+| `ID` | Identity object | Volume 4 | Enterprise Cyber Command |
+| `AGENT` | AI agent registration | Volume 5 | AI Operations Center |
+| `KG` | Knowledge-graph entity | Volume 6 | Engineering Governance |
+| `PIPE` | Delivery pipeline | Volume 7 | Platform Engineering |
+| `KPI` | Performance indicator | Volume 12 | Enterprise Platform Operations Center |
 
 Prefixes `THR` (threat models), `RUN` (runbooks), and `PAT` (architecture patterns) are reserved for the roadmap libraries and must not be used until those libraries are established.
 
