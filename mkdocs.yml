@@ -37,10 +37,18 @@ nav:
       - Repository Map: overview/repository-map.md
   - Frameworks:
       - v17.3 Platform Engineering:
+          - Volume 1 — Reference Platform Architecture: frameworks/EAODS-v17.3/volume-01-reference-platform-architecture.md
+          - Volume 2 — Service Catalog & APIs: frameworks/EAODS-v17.3/volume-02-service-catalog-apis.md
+          - Volume 3 — Data Platform & Observability: frameworks/EAODS-v17.3/volume-03-data-platform-observability.md
+          - Volume 4 — Identity & Zero Trust: frameworks/EAODS-v17.3/volume-04-identity-zero-trust.md
+          - Volume 5 — Automation Fabric & Agent Runtime: frameworks/EAODS-v17.3/volume-05-automation-fabric-agent-runtime.md
+          - Volume 6 — Knowledge Graph & Digital Twin: frameworks/EAODS-v17.3/volume-06-knowledge-graph-digital-twin.md
+          - Volume 7 — DevSecOps & GitOps: frameworks/EAODS-v17.3/volume-07-devsecops-gitops.md
           - Volume 8 — Security Engineering: frameworks/EAODS-v17.3/volume-08-security-engineering.md
           - Volume 9 — Infrastructure Resilience: frameworks/EAODS-v17.3/volume-09-infrastructure-resilience.md
           - Volume 10 — Platform Operations & SRE: frameworks/EAODS-v17.3/volume-10-platform-operations.md
           - Volume 11 — Control Catalog & Compliance: frameworks/EAODS-v17.3/volume-11-control-catalog.md
+          - Volume 12 — Metrics, KPIs & KRIs: frameworks/EAODS-v17.3/volume-12-metrics-kpis-kris.md
   - Standards:
       - STD-0001 Terminology & Identifiers: standards/canonical-terminology-and-identifiers.md
       - STD-0002 Traceability & Knowledge Graph: standards/cross-artifact-traceability.md
