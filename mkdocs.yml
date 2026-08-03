@@ -1,7 +1,8 @@
 site_name: Enterprise AI Operator Documentation Suite v3
 site_description: Enterprise governance, architecture, Domain 03 cybersecurity, and AI operations documentation.
-repo_name: IRsoctierDT/EAODS-v3
-repo_url: https://github.com/IRsoctierDT/EAODS-v3
+repo_name: IRsoctierDT/EAODS-v3-Enterprise-Edition
+repo_url: https://github.com/IRsoctierDT/EAODS-v3-Enterprise-Edition
+site_url: https://irsoctierdt.github.io/EAODS-v3-Enterprise-Edition/
 docs_dir: docs
 site_dir: site
 
@@ -35,6 +36,8 @@ nav:
   - Overview:
       - Vision: overview/vision.md
       - Repository Map: overview/repository-map.md
+      - Releases & Versions: overview/releases-and-versions.md
+      - Accessibility: overview/accessibility.md
   - Frameworks:
       - v17.3 Platform Engineering:
           - Volume 1 — Reference Platform Architecture: frameworks/EAODS-v17.3/volume-01-reference-platform-architecture.md
@@ -49,9 +52,26 @@ nav:
           - Volume 10 — Platform Operations & SRE: frameworks/EAODS-v17.3/volume-10-platform-operations.md
           - Volume 11 — Control Catalog & Compliance: frameworks/EAODS-v17.3/volume-11-control-catalog.md
           - Volume 12 — Metrics, KPIs & KRIs: frameworks/EAODS-v17.3/volume-12-metrics-kpis-kris.md
+  - Governance:
+      - Governance Manual: governance/governance-manual.md
+      - Change Advisory Board: governance/change-advisory-board.md
+      - Risk Management & Register: governance/risk-register.md
+      - Exception Management: governance/exception-management.md
+      - Standards Lifecycle: governance/standards-lifecycle.md
+      - Decision Register & RACI: governance/decision-register-and-raci.md
+      - Release Readiness v1.0.0: governance/release-readiness-v1.0.0.md
+  - Operations:
+      - EPOC Framework: operations/epoc-framework.md
+      - Incident Command Model: operations/incident-command-model.md
+      - Observability & Monitoring: operations/observability-and-monitoring-standards.md
+      - SRE Guidance & Service Levels: operations/sre-guidance-and-service-levels.md
+      - Operational Dashboards: operations/operational-dashboards.md
   - Standards:
       - STD-0001 Terminology & Identifiers: standards/canonical-terminology-and-identifiers.md
       - STD-0002 Traceability & Knowledge Graph: standards/cross-artifact-traceability.md
+      - Documentation Standards & Style Guide: standards/documentation-standards.md
+      - Documentation Quality Assurance Framework: standards/documentation-qa-framework.md
+      - Document Templates: standards/document-templates.md
   - Patterns:
       - Pattern Library: patterns/index.md
       - PAT-0001 Zero Trust Service Identity: patterns/PAT-0001-zero-trust-service-identity.md
@@ -78,6 +98,10 @@ nav:
       - THR-0003 Assurance Evidence Tampering: threat-models/THR-0003-assurance-evidence-tampering.md
   - Reference Implementations:
       - Implementation Index: reference-implementations/index.md
+      - Implementation Guide: reference-implementations/implementation-guide.md
+      - Reusable Implementation Templates: reference-implementations/reusable-templates.md
+      - Case Study — Governed AI Agent Operations: reference-implementations/case-study-ai-governance.md
+      - Case Study — Domain 03 Detection & Response: reference-implementations/case-study-domain03-operations.md
   - History:
       - Historical Corpus: history/index.md
       - Master Corpus: history/00_MASTER_CORPUS.md

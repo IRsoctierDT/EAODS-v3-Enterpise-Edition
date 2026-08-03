@@ -42,7 +42,7 @@ The registries are the source of truth. Prose in any volume that conflicts with 
 | `PIPE` | Delivery pipeline | Volume 7 | Platform Engineering |
 | `KPI` | Performance indicator | Volume 12 | Enterprise Platform Operations Center |
 
-Prefixes `THR` (threat models), `RUN` (runbooks), and `PAT` (architecture patterns) are reserved for the roadmap libraries and must not be used until those libraries are established.
+Prefixes `THR` (threat models), `RUN` (runbooks), and `PAT` (architecture patterns) were originally reserved pending establishment of their libraries. **Those libraries are now established** — `docs/threat-models/`, `docs/runbooks/`, and `docs/patterns/` are populated, and all three prefixes are registered in `standards/vocabulary/object-identifiers.yaml` with an owner and a defining location. They are in normal use; the registry is authoritative for their current state.
 
 ## Terminology rules
 
