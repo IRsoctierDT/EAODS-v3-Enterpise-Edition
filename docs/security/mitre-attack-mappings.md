@@ -68,6 +68,13 @@ The third category is the one that matters here: those identifiers are sample
 data in a superseded prototype, carry no recorded source, and are therefore
 unusable as provenance. They are not promoted into any governed mapping record.
 
+**Transcription performed 2026-08-03 (ATT&CK v19).** Technique identifiers now
+appearing in this standard were transcribed from `attack.mitre.org` on that date
+and ratified by the Program Owner; see section 9 for the transcription record.
+The statement above remains true of the *source authorities* — the identifiers
+come from MITRE, not from the corpus, which is exactly what this section
+requires.
+
 Consequences:
 
 1. This standard defines mapping **method**, not a technique catalogue.
@@ -183,18 +190,35 @@ a named denominator is not a measurement and shall not pass review.
 
 ## 8. Worked application — THR-0001
 
-THR-0001 (compromised service identity) is mapped below to demonstrate the record
-shape. Behavior names are taken from the corpus behavioral and hunt vocabularies;
-technique identifiers are `unassigned` because, per section 3, no source supplies
-one. The example asserts no coverage state above C1: no validation evidence exists
-in the sources for these behaviors.
+THR-0001 (compromised service identity) is mapped below. Behavior names are taken
+from the corpus behavioral and hunt vocabularies; technique identifiers were
+transcribed from ATT&CK v19 on 2026-08-03 (section 9). The example asserts no
+coverage state above C1: no validation evidence exists in the sources for these
+behaviors, and a transcribed identifier does not by itself advance coverage.
 
 | THR-0001 scenario | Behavior name | ATT&CK technique | Hunt playbook | Mitigating control |
 |---|---|---|---|---|
-| Credential theft and replay | Credential abuse | `unassigned` | Identity Abuse Hunt | EAODS-CTRL-000184 · PAT-0001 |
-| Scope escalation | Privilege escalation | `unassigned` | Privilege Escalation Hunt | PAT-0001 |
-| Identity authority compromise | Anomalous authentication | `unassigned` | Identity Abuse Hunt | PAT-0004 · RUN-0001 |
-| Revocation lag | Anomalous authentication | `unassigned` | Identity Abuse Hunt | EAODS-CTRL-000184 |
+| Credential theft and replay | Credential abuse | `T1078` Valid Accounts · `T1550.001` Application Access Token | Identity Abuse Hunt | EAODS-CTRL-000184 · PAT-0001 |
+| Scope escalation | Privilege escalation | `T1078` Valid Accounts | Privilege Escalation Hunt | PAT-0001 |
+| Identity authority compromise | Anomalous authentication | `T1528` Steal Application Access Token · `T1550` Use Alternate Authentication Material | Identity Abuse Hunt | PAT-0004 · RUN-0001 |
+| Revocation lag | Anomalous authentication | `T1078.004` Cloud Accounts | Identity Abuse Hunt | EAODS-CTRL-000184 |
+
+THR-0003 (assurance evidence tampering) is mapped on the same terms:
+
+| THR-0003 scenario | Behavior name | ATT&CK technique | Mitigating control |
+|---|---|---|---|
+| Evidence deletion | Evidence tampering | `T1070.004` File Deletion | EAODS-CTRL-000184 · PAT-0003 |
+| Evidence record alteration | Evidence tampering | `T1565.001` Stored Data Manipulation | PAT-0003 |
+| Evidence ordering defeat | Evidence tampering | `T1070.006` Timestomp | PAT-0003 |
+| Broad indicator suppression | Evidence tampering | `T1070` Indicator Removal | PAT-0003 · RUN-0003 |
+
+**THR-0002 (LLM instruction injection) remains `unassigned`.** No ATT&CK
+Enterprise technique describes instruction injection against a language model,
+and mapping it to an adjacent technique would be the inference section 3
+prohibits. MITRE ATLAS appears to cover this class of threat; adopting any
+`AML.*` identifier requires registering ATLAS as a distinct framework with its
+own identifier prefix under STD-0001 first. That is open work, not a gap in this
+mapping.
 
 Hunt playbook names are the literal portfolio entries of v17.2.3. Control and
 pattern citations are the mitigations THR-0001 already records; this standard
@@ -254,6 +278,44 @@ constructs; that every metric in section 7 remains traceable to a source unit; a
 that identifier discipline under STD-0001 and STD-0002 is intact. Material change
 to the coverage model requires Security Architecture Review Board and Program Owner
 approval.
+
+## 14. Transcription record
+
+Identifiers in this standard were transcribed under the section 3 rule.
+
+| Field | Value |
+|---|---|
+| Source | `https://attack.mitre.org/techniques/<ID>/` and `https://attack.mitre.org/tactics/enterprise/` |
+| ATT&CK release | **v19** (current from 2026-04-28) |
+| Transcribed | 2026-08-03 |
+| Method | Direct retrieval of each technique page; identifier, name, tactic assignment, and technique version taken from the page metadata |
+| Ratified by | Program Owner |
+
+| Technique | Name (as published) | Tactic(s) as published in v19 | Technique version |
+|---|---|---|---|
+| `T1078` | Valid Accounts | Stealth (TA0005) · Persistence (TA0003) · Privilege Escalation (TA0004) · Initial Access (TA0001) | 3.0 |
+| `T1078.004` | Cloud Accounts | sub-technique of T1078 | — |
+| `T1550` | Use Alternate Authentication Material | Lateral Movement (TA0008) | 2.0 |
+| `T1550.001` | Application Access Token | sub-technique of T1550 | — |
+| `T1528` | Steal Application Access Token | Credential Access (TA0006) | 1.5 |
+| `T1070` | Indicator Removal | Stealth (TA0005) | 3.0 |
+| `T1070.004` | File Deletion | sub-technique of T1070 | — |
+| `T1070.006` | Timestomp | sub-technique of T1070 | — |
+| `T1565` | Data Manipulation | Impact (TA0040) | 1.1 |
+| `T1565.001` | Stored Data Manipulation | sub-technique of T1565 | — |
+
+**Vocabulary note.** In ATT&CK v19, `TA0005` is named **Stealth**, and
+**Defense Impairment (`TA0112`)** was created 2026-04-14. Material predating v19
+— including older EAODS drafts and most external writing — refers to `TA0005` as
+"Defense Evasion". Reviewers reconciling this standard against pre-v19 material
+should treat "Defense Evasion" and "Stealth" as the same tactic identifier and
+check whether a behavior belongs under `TA0112` instead. Tactic names are not
+stable across ATT&CK releases; **identifiers are**, which is why the identifier
+is the mapped value and the name is carried only for readability.
+
+**Re-transcription trigger.** A new ATT&CK release requires re-checking every row
+above; a name change alone does not invalidate a mapping, but a technique
+deprecation or re-identification does.
 
 ## 14. Sources and traceability
 
