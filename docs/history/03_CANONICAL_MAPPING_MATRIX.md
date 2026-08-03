@@ -1,7 +1,7 @@
 ---
 title: EAODS Canonical Historical Mapping Matrix
 document_id: EAODS-MIG-MAP-001
-version: 1.2.0-reconstructed
+version: 1.3.0-reconstructed
 status: active
 reconstructed: true
 ---
@@ -42,6 +42,6 @@ Each recovered source must add a row containing:
 | Transmission `EAODS-v7-alpha-v8.5-alpha.md` (SRC-030) | Unit files `…/units/v7.0-v8.3/` | split-into | EAODS-HIST-AIO-001 | 2026-07-27 | registered |
 | v17.3 Volume 1–7 transmissions (SRC-005; EAODS-HIST-V173-001) | Future `docs/frameworks/EAODS-v17.3/volume-01…07` canonical files | implements | EAODS-HIST-V173-001; Program Owner acceptance 2026-07-30 | 2026-07-30 | accepted |
 | v17.3 Volume 12 transmission (SRC-031; EAODS-HIST-V173-001) | Future `docs/frameworks/EAODS-v17.3/volume-12` canonical file | implements | EAODS-HIST-V173-001; Program Owner acceptance 2026-07-30 | 2026-07-30 | accepted |
-| “Volume 11 — Enterprise AI Governance Runtime” (July 6 planning taxonomy; CON-001, EXC-012) | v17.3 Volume 11 — Enterprise Reference Control Catalog, Engineering Standards & Architecture Compliance (`17.3.10-alpha`) | superseded-by | 00_MASTER_CORPUS §5; CON-001 | 2026-07-21 | submitted-for-approval (EXC-012, Architecture Owner) |
+| “Volume 11 — Enterprise AI Governance Runtime” (July 6 planning taxonomy; CON-001, EXC-012) | v17.3 Volume 11 — Enterprise Reference Control Catalog, Engineering Standards & Architecture Compliance (`17.3.10-alpha`) | superseded-by | 00_MASTER_CORPUS §5; CON-001 | 2026-07-21 | approved 2026-07-30 (EXC-012 closed) |
 
 Permitted relationships are `renamed-to`, `replaced-by`, `split-into`, `merged-into`, `implements`, `governed-by`, and `superseded-by`.

@@ -1,7 +1,7 @@
 ---
 title: EAODS Historical Migration Exception Queue
 document_id: EAODS-MIG-EXC-001
-version: 1.5.0-reconstructed
+version: 1.6.0-reconstructed
 status: active
 reconstructed: true
 default_owner: Program Owner
@@ -22,9 +22,9 @@ next_review_date: 2026-08-06
 | EXC-008 | Orchestrator Handbook: recovered 2026-07-06 unit accepted by owner as standing for the dated reference | Program Owner | Closed under closure rule: owner acceptance recorded 2026-07-26; superseded if the 2026-07-07 draft surfaces | closed |
 | EXC-009 | v4.6 ECT: evidence-bounded reconstruction accepted (EAODS-HIST-V46-001) | Program Owner | Closed under closure rule: reconstruction from SRC-026 formally accepted 2026-07-26; original bytes supersede if recovered | closed |
 | EXC-010 | v4.7 Governance & Operational Metrics Standard recovered as a complete file artifact 2026-07-30 (EAODS-HIST-GAP-001) | Program Owner | Closed under closure rule: original recovered and integrity-registered 2026-07-30 | closed |
-| EXC-011 | Canonical repository paths registered in EAODS-HIST-URI-001 | Architecture Owner | Architecture Owner verification and Program Owner approval | pending-review |
-| EXC-012 | Early Volume 11 title conflicts with canonical Volume 11 | Architecture Owner | Approve explicit supersession crosswalk | controlled-open |
-| EXC-013 | Hardening/commercial backlog lacks item-level verification | Repository Owner | Classify each item as complete, pending, superseded, or excepted | open |
+| EXC-011 | Canonical repository paths registered in EAODS-HIST-URI-001; all five paths verified to resolve 2026-07-30 | Architecture Owner | Closed: verification recorded and Program Owner approval granted 2026-07-30 | closed |
+| EXC-012 | Early Volume 11 title conflict resolved by the supersession crosswalk row in EAODS-MIG-MAP-001 | Architecture Owner | Closed: crosswalk row approved 2026-07-30 (superseded-by; canonical Volume 11 unchanged) | closed |
+| EXC-013 | Hardening/commercial backlog verified item-by-item against live repository state 2026-07-30 (classification table in EAODS-HIST-ART-001 §Hardening) | Repository Owner | Closed: every item classified complete, pending, or excepted with evidence | closed |
 | EXC-014 | v4.12, v4.15, v4.16, v4.17 bodies recovered 2026-07-30 in the v4.6–v4.17 band file (EAODS-HIST-GAP-001); v4.12 title discrepancy vs the cited “Cybersecurity Domain Taxonomy” recorded as Q-002 | Program Owner | Closed under closure rule: originals recovered and integrity-registered 2026-07-30 | closed |
 | EXC-015 | v6.7 complete transmission registered 2026-07-30 (EAODS-HIST-CORPUS-001) | Program Owner | Closed under closure rule: evidence-bounded reconstructions formally accepted by the Program Owner 2026-07-30; original bytes supersede if recovered | closed |
 | EXC-016 | v8.2 complete transmission registered 2026-07-30 (EAODS-HIST-CORPUS-001) | Program Owner | Closed under closure rule: evidence-bounded reconstructions formally accepted by the Program Owner 2026-07-30; original bytes supersede if recovered | closed |

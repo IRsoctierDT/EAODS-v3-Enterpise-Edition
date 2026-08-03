@@ -2,7 +2,7 @@
 title: EAODS v3 Enterprise Edition
 document_id: EAODS-ENT-ROOT-001
 version: 1.0.0-consolidated
-status: review-required
+status: approved
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
 ---
@@ -33,3 +33,5 @@ the standing retention decision; recovered copies, the outer snapshot zip, and
 the complete original EAODS-v3 git history (bundle, fourteen branches, PR #10
 fix-branch commit `932b27d`, and stash) are preserved in the owner's private
 archive (EAODS-HIST-GAP-001 §4–§5).
+
+**Consolidation approved by the Program Owner 2026-07-30.**

@@ -1,7 +1,7 @@
 ---
 title: EAODS v4.6–v4.17 Band Recovery & Original Repository Registration
 document_id: EAODS-HIST-GAP-001
-version: 1.0.0
+version: 1.1.0
 status: registered
 owner: Ivan Rozenblad
 governing_architecture: Volume 10
@@ -120,9 +120,9 @@ preserved there.
   as Q-002 and does not reopen the exception.
 - **EXC-009 (v4.6)** → remains closed; variant question recorded as Q-001.
 
-## Open questions for Program Owner review (2026-08-06)
+## Open questions — resolved by Program Owner decision, 2026-07-30
 
-| ID | Question |
-|---|---|
-| Q-001 | Does the LONGGAP v4.6 file variant supersede the accepted conversation reconstruction under EXC-009's supersession clause, or are both retained as parallel variants? |
-| Q-002 | Is the cited v4.12 "Cybersecurity Domain Taxonomy" a mis-citation, or a distinct unrecovered draft warranting a new exception? |
+| ID | Question | Decision |
+|---|---|---|
+| Q-001 | Does the LONGGAP v4.6 file variant supersede the accepted conversation reconstruction? | **Both retained as parallel variants** (the v8.0 precedent). The LONGGAP copy is a content-distinct draft, not the original bytes of the accepted transmission, so the EXC-009 supersession clause is not triggered; no silent selection is made. |
+| Q-002 | Is the cited v4.12 "Cybersecurity Domain Taxonomy" a mis-citation or a distinct draft? | **Ruled a probable mis-citation.** The recovered v4.12 body matches the dated 2026-07-16 project record; no body, citation chain, or roadmap entry supports a distinct "Domain Taxonomy" draft. No new exception; reopens only if a body surfaces. |
