@@ -10,6 +10,7 @@ related:
   - EAODS-ARCH-GOV-001
   - EAODS-ARCH-EOM-001
   - EAODS-SEC-AIRISK-001
+  - EAODS-GOV-EXC-001
   - ADR-0002
   - STD-0001
   - THR-0002
@@ -169,17 +170,45 @@ A compensating control shall be specific, implemented, testable, monitored, docu
 
 A register entry shall not be used to hide unresolved critical vulnerabilities; bypass executive review; avoid remediation due to convenience; suppress findings without evidence; mark untested fixes as complete; excuse unauthorized scanning; override legal or regulatory obligations; or permanently accept risk without review.
 
+## 7.1 Boundary with the exception register
+
+This document and **EAODS-GOV-EXC-001 (Exception Management)** are built from the
+same source and govern overlapping records. The boundary is:
+
+| Concern | Record of origin | Governed by |
+|---|---|---|
+| Whether a risk is tolerable, its rating, and who may accept it | Risk register | This document |
+| Whether a deviation from a control or standard is permitted, and on what terms | Exception register | EAODS-GOV-EXC-001 |
+| Closure of either record | Exception register | EAODS-GOV-EXC-001 §11.2 (four branches) |
+
+A security or control deviation is raised as an **exception**; the residual risk
+it leaves behind is rated and accepted as a **risk acceptance**. One event
+therefore commonly produces one record in each register, cross-referenced by
+identifier — not two competing records of the same decision. Where the two
+documents state the same rule, EAODS-GOV-EXC-001 governs lifecycle and closure,
+and this document governs rating and acceptance authority.
+
 ## 8. Acceptance authority thresholds
 
-Every acceptance carries exactly one approval authority. Consultation does not transfer authority, and human approval for risk acceptance is mandatory and non-delegable.
+Every acceptance record names exactly one **approving authority**, which is the
+value carried in the single-valued approval field of EAODS-GOV-DEC-001 §4. Where
+the source model requires a second seat, that seat is a **concurring authority**:
+its sign-off is mandatory, it is recorded in its own field, and it does not make
+the record jointly approved. Consultation confers neither approval nor
+concurrence. Human approval for risk acceptance is mandatory and non-delegable.
 
-| Risk level | Minimum approver |
-|---|---|
-| Low | Asset Owner |
-| Medium | Business Owner and Security Reviewer |
-| High | Executive Sponsor and Security Lead |
-| Critical | Enterprise Governance Board |
-| Regulated or legal impact | Enterprise Governance Board with Legal and Compliance review |
+| Risk level | Approving authority | Mandatory concurring authority | Consulted |
+|---|---|---|---|
+| Low | Asset Owner | — | — |
+| Medium | Business Owner | Security Reviewer | — |
+| High | Executive Sponsor | Security Lead | — |
+| Critical | Enterprise Governance Board | — | — |
+| Regulated or legal impact | Enterprise Governance Board | — | Legal and Compliance |
+
+This preserves the source model exactly — the same seats are required at the same
+levels — while keeping every record conformant with the single-approval-authority
+test of EAODS-GOV-DEC-001 §15. A record that omits a required concurring
+authority is incomplete, and is not an approved acceptance.
 
 Two overlays apply. The Enterprise Risk Council performs enterprise and residual risk review, risk acceptance oversight, and key risk indicator monitoring; the Domain Owner is responsible for the submission; the EGB is accountable for the risk acceptance review. Risk treatment strategies for AI systems are approved by the AI Governance Council, whose approvals remain its own authority rather than the EGB's.
 
@@ -201,9 +230,9 @@ Register operation runs against the governance cadences already in force: Enterp
 
 ## 10. Register lifecycle
 
-A record moves through: Requested; Under Review; then either Rejected or Needs Revision, or forward to Approved; then Active; then either Expired, Revoked, or Renewed; and finally Closed by Remediation.
+A record moves through: Requested; Under Review; then either Rejected or Needs Revision, or forward to Approved; then Active; then either Expired, Revoked, or Renewed; and finally Closed. A record closes only on one of the four branches fixed by EAODS-GOV-EXC-001 §11.2 — remediation, accepted substitute, supersession, or nullity — and the closure names its branch, its accepting authority, and its date. "Closed by remediation" is one branch of four, not the only terminal state.
 
-The operating sequence behind those states is fixed. A validated finding cannot be remediated on schedule; remediation feasibility is reviewed; a request is created with evidence attached; risk analysis is performed against Section 5.2; compensating controls are reviewed and validated; the residual risk statement is documented; the approval authority of Section 8 is confirmed and the decision recorded; executive reporting is updated; periodic review is scheduled at the Section 9 interval; and the record ends in expiration, renewal, remediation, or revocation. A record that cannot satisfy its gate is not closed silently; it escalates under Section 11 with its rationale, impact analysis, and the unresolved point stated.
+The operating sequence behind those states is fixed. A validated finding cannot be remediated on schedule; remediation feasibility is reviewed; a request is created with evidence attached; risk analysis is performed against Section 5.2; compensating controls are reviewed and validated; the residual risk statement is documented; the approval authority of Section 8 is confirmed and the decision recorded; executive reporting is updated; periodic review is scheduled at the Section 9 interval; and the record ends in expiration, renewal, revocation, or closure on one of the four EAODS-GOV-EXC-001 §11.2 branches. A record that cannot satisfy its gate is not closed silently; it escalates under Section 11 with its rationale, impact analysis, and the unresolved point stated.
 
 ## 11. Escalation
 
