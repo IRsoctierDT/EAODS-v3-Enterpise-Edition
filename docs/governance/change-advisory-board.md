@@ -2,7 +2,7 @@
 title: EAODS Change Advisory Board and Change Governance
 document_id: EAODS-GOV-CAB-001
 version: 1.0.0
-status: proposed
+status: approved
 owner: Enterprise Governance Office
 review_gate: Change Advisory Board and Program Owner approval
 governing_architecture: EAODS v17.3 Volume 10
@@ -225,7 +225,23 @@ Approval of this document requires confirmation by the Change Advisory Board and
 
 Because this document defines approval authorities, risk classifications, rollback requirements, and configuration governance, its adoption additionally passes architecture review, governance validation, and executive approval.
 
-## 17. Sources and traceability
+## 17. Approval
+
+Approved by the Program Owner on 2026-08-03, closing the Human governance
+review gate of epic #26.
+
+| Field | Value |
+|---|---|
+| Approving authority | Program Owner (Ivan Rozenblad) |
+| Approval date | 2026-08-03 |
+| Gate closed | Epic #26 — Human governance review |
+| Basis | Independent four-lens defect review (34 candidates, 8 confirmed and fixed in PR #65) preceding sign-off |
+| Status effect | `proposed` → `approved`; this document is enforceable governance |
+
+Subsequent material change re-enters the lifecycle at Section 6 and requires
+re-approval; it does not inherit this one.
+
+## 18. Sources and traceability
 
 | Source (repo-relative path) | Contribution |
 |-----------------------------|--------------|

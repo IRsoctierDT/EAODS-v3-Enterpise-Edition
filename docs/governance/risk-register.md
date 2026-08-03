@@ -2,7 +2,7 @@
 title: EAODS Risk Management and Risk Register
 document_id: EAODS-GOV-RISK-001
 version: 1.0.0
-status: proposed
+status: approved
 owner: Enterprise Governance Office
 review_gate: Enterprise Governance Board and Program Owner approval
 governing_architecture: EAODS v17.3 Volume 10
@@ -276,7 +276,23 @@ Approval of this document requires confirmation by the Enterprise Governance Boa
 
 Changes affecting approval authority, exception eligibility, expiration rules, compensating-control requirements, escalation conditions, or executive reporting shall additionally undergo security governance review, risk management review, and legal or compliance review where applicable before adoption.
 
-## 16. Sources and traceability
+## 16. Approval
+
+Approved by the Program Owner on 2026-08-03, closing the Human governance
+review gate of epic #26.
+
+| Field | Value |
+|---|---|
+| Approving authority | Program Owner (Ivan Rozenblad) |
+| Approval date | 2026-08-03 |
+| Gate closed | Epic #26 — Human governance review |
+| Basis | Independent four-lens defect review (34 candidates, 8 confirmed and fixed in PR #65) preceding sign-off |
+| Status effect | `proposed` → `approved`; this document is enforceable governance |
+
+Subsequent material change re-enters the lifecycle at Section 6 and requires
+re-approval; it does not inherit this one.
+
+## 17. Sources and traceability
 
 | Source (repo-relative path) | Contribution |
 |---|---|

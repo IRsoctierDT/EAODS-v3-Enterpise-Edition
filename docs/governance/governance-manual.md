@@ -2,7 +2,7 @@
 title: EAODS Governance Manual
 document_id: EAODS-GOV-MAN-001
 version: 1.0.0
-status: proposed
+status: approved
 owner: Enterprise Governance Office
 review_gate: Enterprise Governance Board and Program Owner approval
 governing_architecture: EAODS v17.3 Volume 10
@@ -236,7 +236,23 @@ Approval of this manual requires confirmation by the Enterprise Governance Board
 
 Because this document states governance authority, board charters, decision rights, RACI assignments, escalation procedures, executive reporting, and cross-domain oversight, its adoption additionally passes multi-role governance review by Executive Leadership, Enterprise Architecture, Security Governance, Internal Audit, and Legal/Compliance where applicable, before publication.
 
-## 16. Sources and traceability
+## 16. Approval
+
+Approved by the Program Owner on 2026-08-03, closing the Human governance
+review gate of epic #26.
+
+| Field | Value |
+|---|---|
+| Approving authority | Program Owner (Ivan Rozenblad) |
+| Approval date | 2026-08-03 |
+| Gate closed | Epic #26 — Human governance review |
+| Basis | Independent four-lens defect review (34 candidates, 8 confirmed and fixed in PR #65) preceding sign-off |
+| Status effect | `proposed` → `approved`; this document is enforceable governance |
+
+Subsequent material change re-enters the lifecycle at Section 6 and requires
+re-approval; it does not inherit this one.
+
+## 17. Sources and traceability
 
 | Source (repo-relative path) | Contribution |
 |-----------------------------|--------------|
