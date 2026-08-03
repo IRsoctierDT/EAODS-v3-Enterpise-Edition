@@ -1,8 +1,8 @@
 ---
 title: EAODS Canonical Repository URI Register
 document_id: EAODS-HIST-URI-001
-version: 1.0.0
-status: proposed
+version: 1.1.0
+status: approved
 owner: Architecture Owner
 review_gate: Program Owner approval
 governing_architecture: EAODS v17.3 Volume 10
@@ -28,6 +28,11 @@ This register resolves canonical repository locations required for historical mi
 ## Human review gate
 
 The Architecture Owner must verify each path exists and confirm that no historical artifact silently replaces a canonical repository artifact.
+
+**Verification record (2026-07-30):** all five registered paths verified to
+resolve on `main`; no historical artifact replaces a canonical repository
+artifact (historical material lives under `history/` and `docs/history/`
+exclusively). Program Owner approval recorded 2026-07-30; EXC-011 closed.
 
 ## QA requirements
 

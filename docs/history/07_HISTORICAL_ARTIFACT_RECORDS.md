@@ -1,7 +1,7 @@
 ---
 title: EAODS Reconstructed Historical Artifact Records
 document_id: EAODS-HIST-ART-001
-version: 1.1.0-reconstructed
+version: 1.2.0-reconstructed
 status: evidence-bounded
 reconstructed: true
 ---
@@ -80,6 +80,30 @@ reconstructed: true
 
 ## Hardening and commercial-readiness record
 
-The historical backlog includes branch protection, reviewers, signed commits, discussions, wiki/projects/milestones, advisories, CodeQL, secret scanning, OpenSSF Scorecard, SBOM, SPDX, release artifacts, semantic versioning, branding, public documentation, architecture portal, interactive diagrams, search, PDF, version selection, downloads, and developer access.
+**Item-level verification (2026-07-30, against live repository state; EXC-013 closed):**
 
-Each item remains `planned-unverified` in this reconstruction until checked against the authoritative roadmap and repository state.
+| Item | State | Evidence |
+|---|---|---|
+| Branch protection | complete | linear history required; `validate` status check required; direct pushes to `main` rejected |
+| Required reviewers | excepted | single-maintainer model; merges are admin-gated by the Program Owner |
+| Signed commits | pending | `required_signatures` disabled |
+| Discussions | pending | feature disabled |
+| Wiki / Projects / Milestones | complete | wiki and projects enabled |
+| Security advisories | pending | private vulnerability reporting not configured |
+| CodeQL | pending | default setup `not-configured` (languages detected: actions, python) |
+| Secret scanning | complete | enabled, with push protection |
+| Dependabot | complete | config present; security updates enabled |
+| OpenSSF Scorecard | pending | workflow not present |
+| SBOM | pending | not generated |
+| SPDX licensing | pending | LICENSE present but SPDX `NOASSERTION`; normalize to a recognized identifier |
+| Release artifacts / semantic versioning | pending | zero releases and zero tags |
+| Branding / public documentation / architecture portal | complete | GitHub Pages live (MkDocs Material) |
+| Interactive diagrams | complete | Mermaid diagrams render in framework volumes |
+| Search | complete | MkDocs Material built-in search |
+| PDF export | pending | not configured |
+| Version selection | pending | mike/versioning not configured |
+| Downloads | complete | archival packages retrievable from `history/` |
+| Developer access | complete | public repository |
+
+Pending items feed the GitHub Enterprise Automation and Documentation
+Excellence epics; none blocks migration.
