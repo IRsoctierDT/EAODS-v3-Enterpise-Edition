@@ -1,8 +1,41 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2026-08-03
+
+First general-availability release of EAODS Enterprise Edition as a complete
+Enterprise Reference Operating Model: the historical corpus recovered and
+governed, the twelve-volume v17.3 framework published, and the enterprise
+architecture, cybersecurity, governance, operations, documentation, and
+reference-implementation layers authored on top of it.
+
+### Historical migration — complete
+
+- All 18 corpus exceptions closed. Every version line from v3.1 through v17.3,
+  plus the v8.6/v8.7 AI Operator Suite standards, has recovered bodies on the
+  register with SHA-256 integrity and provenance.
+- 105 recovery units registered across EAODS-HIST-ENT/PKG/V46/AIO/V173/GAP/
+  CORPUS-001, each independently verified for completeness and contamination
+  before acceptance.
+- v17.3 Volumes 1-12 published in `docs/frameworks/EAODS-v17.3/`.
 
 ### Added
+
+- Enterprise Architecture Framework (epic #24): architecture principles, enterprise reference architecture, business architecture, capability model, value streams, solution architecture templates, and the architecture governance model.
+- Cybersecurity Domain 03 expansion (epic #25): Zero Trust architecture, identity/access/secrets management, secure development lifecycle, software supply chain security, AI risk management, the MITRE ATT&CK mapping standard, and the threat-model library register.
+- Governance Modernization (epic #26): governance manual, Change Advisory Board and change governance, risk management and register, exception management, standards lifecycle, and the decision register with RACI matrices.
+- Platform Engineering & Operations (epic #27): EPOC framework, incident command model, observability and monitoring standards, SRE guidance with service levels, and operational dashboard specifications.
+- GitHub enterprise automation (epic #28): CodeQL analysis, OpenSSF Scorecard, SPDX SBOM generation per release, and internal link/navigation validation enforced in CI.
+- Documentation Excellence (epic #29): documentation standards and style guide, documentation QA framework, and document templates.
+- Public site improvements (epic #30): canonical repository URL and site URL, accessibility statement with measured audit results, releases and version-navigation guidance, and a per-release PDF library of the v17.3 framework volumes.
+- Reference Implementations (epic #31): implementation guide, two illustrative case studies (governed AI agent operations; Domain 03 detection and response), and reusable record templates.
+- v1.0.0 release readiness and security review record (EAODS-GOV-REL-001).
+
+### Changed
+
+- Third-party GitHub Actions pinned to commit SHAs, bringing the repository into line with the software supply chain security standard it publishes.
+- STD-0001: the THR/RUN/PAT prefix reservation note corrected — those libraries are established, the prefixes are registered, and the registry is authoritative.
+
+### Previously recorded
 
 - Production repository scaffold.
 - Governance and security documentation.
