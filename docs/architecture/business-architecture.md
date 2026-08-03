@@ -8,6 +8,8 @@ review_gate: Enterprise Architecture Review Board and Program Owner approval
 governing_architecture: EAODS v17.3 Volume 10
 related:
   - EAODS-ARCH-EOM-001
+  - EAODS-GOV-MAN-001
+  - EAODS-ARCH-GOV-001
   - ADR-0002
   - history/original-sources/conversation-evidence/v6.7-v16-band (EAODS v13.0.0–13.0.5 alpha volume units)
   - history/original-sources/conversation-evidence/v6.7-v16-band (EAODS v15.0.0–15.0.5 alpha volume units)
@@ -115,14 +117,32 @@ The v15.0 framework makes this operating model adaptive: organizational structur
 
 Enterprise decisions are classified by authority.
 
-| Decision class | Deciding authority |
+| Decision class | Approval authority |
 |----------------|--------------------|
-| Strategic | Executive Leadership |
-| Architectural | Enterprise Architecture Review Board (EARB) |
-| Cybersecurity | Domain 03 Governance Board |
-| AI Governance | AI Governance Council |
-| Operational | Capability Owners |
-| Emergency | Incident Commander under approved emergency authority |
+| Editorial | Document Owner |
+| Operational | Domain Owner |
+| Technical architecture | Enterprise Architecture Review Board |
+| AI governance | AI Governance Council |
+| Enterprise risk | Enterprise Risk Council |
+| Enterprise policy | Enterprise Governance Board |
+| Strategic investment | Executive Leadership |
+
+**Naming reconciliation.** The v13 source states a six-class model — Strategic,
+Architectural, Cybersecurity, AI Governance, Operational, Emergency. The table
+above is the approved seven-class taxonomy of EAODS-GOV-MAN-001 §6, which
+governs. The source classes map onto it without creating a body or an authority:
+
+| v13 source class | Approved class | Authority |
+|---|---|---|
+| Strategic | Strategic investment | Executive Leadership |
+| Architectural | Technical architecture | Enterprise Architecture Review Board |
+| **Cybersecurity** | Technical architecture | EARB, with Domain 03 review as a **consultation** — consultation confers no approval authority |
+| AI Governance | AI governance | AI Governance Council |
+| **Operational** | Operational | **Domain Owner** (the source's "Capability Owner" is read as Domain Owner) |
+| **Emergency** | not a class | An authorization *path*, not a decision class: EAODS-GOV-CAB-001 §6.2 defers review sequence, never review substance. The Incident Commander acts under a time-bounded delegation from the Domain Owner, recorded as an Operational decision. |
+
+No new governing body is created by this document and no authority is
+transferred. The four overlays of EAODS-GOV-MAN-001 §6 apply cumulatively.
 
 Governance authority is tiered from G1 (Board Governance) through G2 (Executive Leadership), G3 (Enterprise Governance Councils), G4 (Capability Governance Boards), G5 (Operational Management), to G6 (Delivery and Execution Teams). Each tier possesses explicitly documented authority and accountability.
 
@@ -157,9 +177,23 @@ The principal cross-organizational interfaces are:
 | Domain 03 ↔ Portfolio and governance reviews | Domain 03 participates in decisions affecting enterprise risk, infrastructure, cloud, AI deployments, identity systems, and customer-facing services; cybersecurity review is mandatory for material enterprise changes |
 | Capability boards ↔ Delivery organizations | Local autonomy operates within centrally approved guardrails |
 | Strategic intelligence ↔ Executive planning | Strategic, risk, capability, value, and performance intelligence inform executive decisions; recommendations never automatically authorize high-impact actions |
-| Escalation path | E1 Team Lead → E2 Capability Owner → E3 Governance Board → E4 Executive Leadership → E5 Board-Level Review, with documented thresholds |
+| Escalation path | E1–E5 tier notation, mapped to the approved fixed path below |
 
 Governance conflicts are resolved through documented issue statements, evidence review, stakeholder consultation, architectural evaluation, and executive arbitration when required, with resolutions preserved in the decision register.
+
+**Escalation reconciliation.** E1–E5 is the v13 source's tier notation. The
+binding path is the fixed one in EAODS-GOV-MAN-001 §9, EAODS-GOV-EXC-001 §12 and
+EAODS-GOV-DEC-001 §13:
+
+| Source tier | Approved step |
+|---|---|
+| E1 Team Lead | the operational issue as raised |
+| E2 Capability Owner | Domain Owner |
+| E3 Governance Board | Governance Manager, then the Architecture, AI, or Risk Council |
+| E4 Executive Leadership | Enterprise Governance Board |
+| E5 Board-Level Review | Executive Leadership |
+
+Where the notations differ, the approved path governs.
 
 ## 11. Planning and operating cadence
 

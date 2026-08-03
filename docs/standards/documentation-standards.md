@@ -59,7 +59,7 @@ Two of the documents read for this guide — `docs/standards/canonical-terminolo
 Authoring rules for this schema:
 
 - values are quoted strings; multi-valued fields such as `extends` are YAML sequences;
-- `title` and the document H1 state the same thing, so a reader arriving from search and a reader arriving from the navigation see one title;
+- `title` carries the full canonical title used by search and navigation; the H1 carries the document's display title, which may be a short form of `title` but must not name a different object. The v17.3 volumes demonstrate this: `title` is the full volume designation while the H1 is the short form, so a reader arriving from search and a reader arriving from the navigation see one title;
 - the validator checks presence, not content, so the review gate is what confirms `owner`, `classification`, and `review_cycle` are truthful.
 
 ## 4. Governance front-matter schema (eight fields)
@@ -85,11 +85,11 @@ Authoring rules for this schema:
 
 ## 5. Structure, headings, and numbering
 
-- **One H1 per document**, stating the title verbatim. Nothing precedes it except front matter.
+- **One H1 per document**, naming the same object as `title` (a short display form is permitted). Nothing precedes it except front matter.
 - **Governance-tier documents number their `##` sections** — `## 1. Purpose`, `## 2. …` — in sentence case, as the operating model and the principles catalog do. Numbering makes cross-references stable ("Section 7") without minting identifiers.
 - **Framework volumes and the existing STD documents use unnumbered `##` sections** in a fixed sequence. Volume 8 runs Purpose, Architecture, Enterprise workflow, Integration points, QA checklist, Human review gate; STD-0001 and STD-0002 run Purpose, Scope, authoritative sources, rules, workflow or validation, Integration points, QA checklist, Human review gate.
 - **Heading levels are not skipped.** `###` appears only inside a `##` section, as in the four-pillar breakdown of the operating model.
-- **Closing sections are mandatory.** Every document ends with a human review gate. Governance-tier documents then close with the sources-and-traceability table required by Section 9, which is the final section of the document.
+- **Closing sections are mandatory for documents authored after this guide.** Such a document ends with a human review gate, then closes with the numbered sources-and-traceability section required by Section 9. Two pre-existing documents are recorded non-conformances rather than silent exceptions: `docs/architecture/ENTERPRISE_OPERATING_MODEL.md` predates the guide, and some `docs/architecture/` documents carry unnumbered closing headings. Remediation owner: Engineering Governance, at each document's next material revision. Governance-tier documents then close with the sources-and-traceability table required by Section 9, which is the final section of the document.
 - **QA checklists** are checkbox lists of verifiable conditions, one per line, phrased so that a reviewer can mark each true or false without interpretation.
 
 ## 6. Voice, tense, and normative language
@@ -165,7 +165,7 @@ Pull requests follow `CONTRIBUTING.md`: short-lived branches named `docs/<topic>
 
 - [ ] Correct front-matter schema selected for the document's location (Section 2).
 - [ ] All required fields present, with `owner` and gate fields truthful.
-- [ ] Single H1 matching `title`; section numbering matches the document class.
+- [ ] Single H1; H1 and `title` name the same document; section numbering matches the document class.
 - [ ] Human review gate section present; governance-tier documents close with sources and traceability.
 - [ ] Present tense, third person, active voice, named actors for every obligation.
 - [ ] Tables have header rows and parallel columns; diagrams restate prose rather than replace it.
@@ -180,7 +180,7 @@ Approval of this guide requires confirmation by Engineering Governance and the P
 
 - both front-matter schemas are stated as they are actually enforced, and the rule selecting between them matches the validator's search roots;
 - the identifier and terminology rules restate STD-0001 without extending it, and the enforcement description matches STD-0002 and the traceability validator;
-- the sources-and-traceability requirement matches the practice of the approved architecture documents;
+- the sources-and-traceability requirement is stated as forward-looking, and the recorded non-conformances in Section 5 still match the current `docs/architecture/` set;
 - no new obligation is imposed on contributors beyond those already carried by STD-0001, STD-0002, and `CONTRIBUTING.md`.
 
 Subsequent changes to this guide follow the same gate, and any change that alters an obligation rather than its wording requires a version increment.

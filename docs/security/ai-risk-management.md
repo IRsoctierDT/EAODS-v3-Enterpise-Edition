@@ -79,6 +79,8 @@ The identity lifecycle is registration, verification, credential issuance, capab
 
 Authorization is capability-based: permissions are assigned as discrete capabilities — the source capability classes are telemetry read, evidence write, workflow execute, detection analysis, incident assistance, policy evaluation, report generation and recovery coordination, cited there as examples rather than as a closed set — rather than unrestricted administrative access. Capability inheritance is explicitly documented and approved, and delegated authority never exceeds the authority of the originating identity, carrying a defined maximum duration, approval authority, monitoring requirement, and automatic expiration.
 
+**Ladder reconciliation.** T0–T5 is the agent *trust* ladder (v7.6 Trust Fabric) and is the value carried by the `trust level` authorization input. It is distinct from the *automation authority* ladder A0–A5 in EAODS-SEC-ZT-001 §12. An agent holds both; neither implies the other.
+
 | Trust level | Description |
 |---|---|
 | T0 | Untrusted |
