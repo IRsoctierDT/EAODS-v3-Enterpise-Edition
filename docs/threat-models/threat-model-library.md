@@ -95,7 +95,7 @@ Executive reporting draws only on evidence rated at integrity-verified quality o
 
 ### 3.7 What entries must not assert
 
-No entry asserts a MITRE ATT&CK technique identifier that no source authority in this repository carries. The Domain 03 units require detections and intelligence objects to maintain governed relationships to threats and techniques, but they do not enumerate technique identifiers, and nothing in the current corpus authorizes a specific citation. Technique mapping is added when the intelligence register supplies it, with provenance, and not before.
+No entry asserts a MITRE ATT&CK technique identifier. The Domain 03 units require detections and intelligence objects to maintain governed relationships to threats and techniques, but they do not enumerate technique identifiers, so no Domain 03 source authority supports a specific citation. Where ATT&CK appears elsewhere in the repository it carries no transcription provenance; the evidentiary position and the occurrences themselves are recorded in the mapping standard (EAODS-SEC-ATTACK-001, section 3). Technique mapping is added when the intelligence register supplies it, with provenance, and not before.
 
 Entries likewise invent no metrics. Where a measure is needed, entries cite one the platform already requires — detection latency, false-positive rate, false-negative estimate, telemetry completeness, validation success rate, analyst acceptance rate, evidence completeness, unauthorized action attempts.
 
